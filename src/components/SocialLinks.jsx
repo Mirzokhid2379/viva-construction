@@ -21,7 +21,11 @@ export function SocialIcon({ id, size = 20 }) {
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">{ICONS[id]}</svg>;
 }
 
-const linkProps = (s) => ({ href: s.url, target: "_blank", rel: "noopener noreferrer" });
+// Havolasi bo‘sh tarmoqlar: href="" turadi, bosilganda sahifa qayta yuklanmaydi
+const linkProps = (s) =>
+  s.url
+    ? { href: s.url, target: "_blank", rel: "noopener noreferrer" }
+    : { href: "", onClick: (e) => e.preventDefault() };
 
 // Faqat ikonkalar qatori (footer, menyu)
 export function SocialIcons({ className = "" }) {
@@ -44,8 +48,8 @@ export function SocialCards() {
       {SOCIALS.map((s) => (
         <a key={s.id} className={`soc-card soc-${s.id}`} {...linkProps(s)}>
           <span className="soc-ic"><SocialIcon id={s.id} size={22} /></span>
-          <span className="soc-tx"><b>{s.name}</b><small>{s.handle}</small></span>
-          <span className="soc-go">{t.social.open} →</span>
+          <span className="soc-tx"><b>{s.name}</b>{s.handle && <small>{s.handle}</small>}</span>
+          {s.url && <span className="soc-go">{t.social.open} →</span>}
         </a>
       ))}
     </div>

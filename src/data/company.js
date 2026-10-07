@@ -22,10 +22,10 @@ export const CONTACTS = {
   map: "https://www.google.com/maps/search/?api=1&query=Nest+One+Tashkent+City",
 };
 
-// Ijtimoiy tarmoqlar. `ready: false` — havola hali taxminiy, haqiqiysini bilganda shu yerga yozing va true qiling.
+// Ijtimoiy tarmoqlar. Havola bo‘lmasa url: "" qoldiring — ikonka turadi, lekin hech qayerga olib bormaydi.
 export const SOCIALS = [
-  { id: "telegram", name: "Telegram", handle: "@vivaconstructions", url: "https://t.me/vivaconstructions", ready: false },
-  { id: "instagram", name: "Instagram", handle: "@vivaconstructions.uz", url: "https://www.instagram.com/vivaconstructions.uz/", ready: true },
-  { id: "youtube", name: "YouTube", handle: "@vivaconstructions", url: "https://www.youtube.com/@vivaconstructions", ready: false },
-  { id: "facebook", name: "Facebook", handle: "vivaconstructions", url: "https://www.facebook.com/vivaconstructions", ready: false },
+  { id: "telegram", name: "Telegram", handle: "", url: "" },
+  { id: "instagram", name: "Instagram", handle: "@vivaconstructions.uz", url: "https://www.instagram.com/vivaconstructions.uz/" },
+  { id: "youtube", name: "YouTube", handle: "", url: "" },
+  { id: "facebook", name: "Facebook", handle: "", url: "" },
 ];
