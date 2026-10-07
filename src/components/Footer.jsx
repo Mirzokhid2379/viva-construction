@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Brand } from "./Header.jsx";
 import { useI18n, useProjects } from "../i18n/index.jsx";
 import { SocialIcons } from "./SocialLinks.jsx";
+import { CONTACTS } from "../data/company.js";
 
 const FOOTER_PROJECTS = ["fargona-bess", "nurobod", "sazagan", "buxoro", "tolimarjon"];
 
@@ -14,7 +15,11 @@ export default function Footer() {
         <div className="g">
           <div>
             <div className="brand" style={{ color: "var(--night-ink)" }}><Brand size={40} /></div>
-            <p style={{ margin: "16px 0 20px", maxWidth: "38ch" }}>{t.footer.about}</p>
+            <p style={{ margin: "16px 0 16px", maxWidth: "38ch" }}>{t.footer.about}</p>
+            <div className="f-contact">
+              <a className="f-tel" href={`tel:${CONTACTS.phone.replace(/\s/g, "")}`}>{CONTACTS.phone}</a>
+              <a href={CONTACTS.map} target="_blank" rel="noopener noreferrer">{t.contact.officeAddress}</a>
+            </div>
             <SocialIcons />
           </div>
           <div>

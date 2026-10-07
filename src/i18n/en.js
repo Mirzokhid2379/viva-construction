@@ -69,7 +69,7 @@ export default {
     ],
     partners: "Companies we have worked with",
   },
-  closing: { title: "Let’s build your next power plant together", text: "Send us your technical brief and we will propose a team, equipment and timeline.", btn: "Contact us" },
+  closing: { title: "Trust us with any construction project!", text: "Send us your technical brief and we will propose a team, equipment and timeline.", btn: "Contact us" },
   projectsPage: { title: "Projects", lead: (n, d, w) => `${n} power plants: ${d} completed, ${w} under construction.` },
   detail: {
     company: "Company", role: "Role", partners: "Partners", status: "Status", scope: "Our scope of work",
@@ -109,7 +109,8 @@ export default {
   contact: {
     title: "Let’s discuss your project",
     lead: "Send us a technical brief for a solar, thermal or battery storage plant.",
-    director: "Director", directorName: "Khumoyun Akhmadjonov", phone: "Phone", email: "Email", instagram: "Instagram", address: "Address",
+    director: "Director", directorName: "Khumoyun Akhmadjonov", phone: "Phone", email: "Email", instagram: "Instagram", address: "Address", office: "Office", legal: "Legal address", mapOpen: "Open in maps",
+    officeAddress: "Nest One, Tashkent City, 1-A-4 Islam Karimov Street, Block C, 19th floor, Office 159, Tashkent",
     vivaAddress: "13 Bektemir Shoh Street, Bektemir district, Tashkent",
     activity: "Activity", docs: "Documents",
     omegaAddress: "172 Sayhun Street, Tong Yulduzi, Mirabad district, Tashkent",

@@ -48,9 +48,10 @@ export default function Contact() {
             <div className="cc">
               <h3>VIVA Construction</h3>
               <div className="r"><span>{c.director}</span><b>{c.directorName}</b></div>
-              <div className="r"><span>{c.phone}</span><div className="row"><b className="num">{CONTACTS.phone}</b><CopyButton text={CONTACTS.phone} /></div></div>
+              <div className="r"><span>{c.phone}</span><div className="row"><a className="num tel" href={`tel:${CONTACTS.phone.replace(/\s/g, "")}`}><b>{CONTACTS.phone}</b></a><CopyButton text={CONTACTS.phone} /></div></div>
               <div className="r"><span>{c.email}</span><div className="row"><b>{CONTACTS.email}</b><CopyButton text={CONTACTS.email} /></div></div>
-              <div className="r"><span>{c.address}</span><b>{c.vivaAddress}</b></div>
+              <div className="r"><span>{c.office}</span><b>{c.officeAddress}</b><a className="maplink" href={CONTACTS.map} target="_blank" rel="noopener noreferrer">{c.mapOpen} ↗</a></div>
+              <div className="r"><span>{c.legal}</span><b>{c.vivaAddress}</b></div>
             </div>
             <div className="cc">
               <h3>OMEGA Energy Group</h3>

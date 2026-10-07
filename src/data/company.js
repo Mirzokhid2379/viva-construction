@@ -19,6 +19,7 @@ export const PARTNERS = ["Energy China", "Larsen & Toubro", "ACWA Power", "UET C
 export const CONTACTS = {
   phone: "+998 33 002 22 24",
   email: "khumoyun2020@gmail.com",
+  map: "https://www.google.com/maps/search/?api=1&query=Nest+One+Tashkent+City",
 };
 
 // Ijtimoiy tarmoqlar. `ready: false` — havola hali taxminiy, haqiqiysini bilganda shu yerga yozing va true qiling.

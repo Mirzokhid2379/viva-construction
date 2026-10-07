@@ -395,3 +395,12 @@ footer .socials a.soc{padding:0;display:grid}
 .soc-tx small{color:var(--muted);font-size:13.5px;overflow-wrap:anywhere}
 .soc-go{margin-top:auto;font-size:13px;font-weight:600;color:var(--amber-ink)}
 @media (max-width:860px){.soc-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ofis manzili va telefon */
+.cc .r a.tel{text-decoration:none;color:inherit}
+.cc .r a.tel:hover b{color:var(--amber-ink,var(--amber))}
+.cc .maplink{display:inline-block;margin-top:6px;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.cc .maplink:hover{color:var(--ink)}
+footer .f-contact{margin:0 0 20px;max-width:40ch}
+footer .f-contact a{line-height:1.5}
+footer .f-contact .f-tel{font-size:18px;font-weight:500;color:var(--night-ink);letter-spacing:.01em;margin-bottom:4px}

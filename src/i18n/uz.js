@@ -69,7 +69,7 @@ export default {
     ],
     partners: "Biz bilan ishlagan kompaniyalar",
   },
-  closing: { title: "Keyingi stansiyangizni birga quraylik", text: "Texnik topshiriqni yuboring: jamoa, texnika va muddatlar bo‘yicha taklif tayyorlaymiz.", btn: "Bog‘lanish" },
+  closing: { title: "Har qanday qurilishni bizga ishoning!", text: "Texnik topshiriqni yuboring: jamoa, texnika va muddatlar bo‘yicha taklif tayyorlaymiz.", btn: "Bog‘lanish" },
   projectsPage: { title: "Loyihalar", lead: (n, d, w) => `${n} ta elektr stansiyasi: ${d} tasi topshirilgan, ${w} tasi hozir qurilmoqda.` },
   detail: {
     company: "Kompaniya", role: "Roli", partners: "Hamkorlar", status: "Holati", scope: "Biz bajargan ishlar",
@@ -109,7 +109,8 @@ export default {
   contact: {
     title: "Loyihangizni muhokama qilamiz",
     lead: "Quyosh, issiqlik yoki energiya saqlash stansiyasi bo‘yicha texnik topshiriqni yuboring.",
-    director: "Direktor", directorName: "Xumoyun Ahmadjonov", phone: "Telefon", email: "Elektron pochta", instagram: "Instagram", address: "Manzil",
+    director: "Direktor", directorName: "Xumoyun Ahmadjonov", phone: "Telefon", email: "Elektron pochta", instagram: "Instagram", address: "Manzil", office: "Ofis", legal: "Yuridik manzil", mapOpen: "Xaritada ochish",
+    officeAddress: "Toshkent, Tashkent City, Nest One biznes markazi, Islom Karimov ko‘chasi, 1-A-4, C-blok, 19-qavat, 159-ofis",
     vivaAddress: "Toshkent, Bektemir tumani, Bektemir Shoh ko‘chasi, 13",
     activity: "Faoliyat", docs: "Hujjatlar",
     omegaAddress: "Toshkent, Mirobod tumani, Tong Yulduzi MFY, Sayhun ko‘chasi, 172",
