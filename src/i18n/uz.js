@@ -69,7 +69,7 @@ export default {
     ],
     partners: "Biz bilan ishlagan kompaniyalar",
   },
-  closing: { title: "Stansiya qurilishi uchun pudratchi kerakmi?", text: "Texnik topshiriqni yuboring: jamoa, texnika va muddatlar bo‘yicha taklif tayyorlaymiz.", btn: "Bog‘lanish" },
+  closing: { title: "Keyingi stansiyangizni birga quraylik", text: "Texnik topshiriqni yuboring: jamoa, texnika va muddatlar bo‘yicha taklif tayyorlaymiz.", btn: "Bog‘lanish" },
   projectsPage: { title: "Loyihalar", lead: (n, d, w) => `${n} ta elektr stansiyasi: ${d} tasi topshirilgan, ${w} tasi hozir qurilmoqda.` },
   detail: {
     company: "Kompaniya", role: "Roli", partners: "Hamkorlar", status: "Holati", scope: "Biz bajargan ishlar",

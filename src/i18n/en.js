@@ -69,7 +69,7 @@ export default {
     ],
     partners: "Companies we have worked with",
   },
-  closing: { title: "Need a contractor to build your plant?", text: "Send us your technical brief and we will propose a team, equipment and timeline.", btn: "Contact us" },
+  closing: { title: "Let’s build your next power plant together", text: "Send us your technical brief and we will propose a team, equipment and timeline.", btn: "Contact us" },
   projectsPage: { title: "Projects", lead: (n, d, w) => `${n} power plants: ${d} completed, ${w} under construction.` },
   detail: {
     company: "Company", role: "Role", partners: "Partners", status: "Status", scope: "Our scope of work",
