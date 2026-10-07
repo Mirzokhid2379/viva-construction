@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import VivaMark from "./VivaMark.jsx";
 import { LangSwitch, useI18n } from "../i18n/index.jsx";
+import { SocialIcons } from "./SocialLinks.jsx";
 
 export function Brand({ size = 34 }) {
   const { t } = useI18n();
@@ -59,6 +60,7 @@ export default function Header() {
           </div>
           <Link to="/">{t.nav.home}</Link>
           {links.map(([to, label]) => <Link key={to} to={to}>{label}</Link>)}
+          <SocialIcons />
         </div>
       )}
     </>

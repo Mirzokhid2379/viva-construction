@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Brand } from "./Header.jsx";
 import { useI18n, useProjects } from "../i18n/index.jsx";
+import { SocialIcons } from "./SocialLinks.jsx";
 
 const FOOTER_PROJECTS = ["fargona-bess", "nurobod", "sazagan", "buxoro", "tolimarjon"];
 
@@ -13,7 +14,8 @@ export default function Footer() {
         <div className="g">
           <div>
             <div className="brand" style={{ color: "var(--night-ink)" }}><Brand size={40} /></div>
-            <p style={{ margin: "16px 0 0", maxWidth: "38ch" }}>{t.footer.about}</p>
+            <p style={{ margin: "16px 0 20px", maxWidth: "38ch" }}>{t.footer.about}</p>
+            <SocialIcons />
           </div>
           <div>
             <h4>{t.footer.site}</h4>

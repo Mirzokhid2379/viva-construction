@@ -3,6 +3,7 @@ import { PageTitle } from "../seo/Head.jsx";
 import { CONTACTS } from "../data/company.js";
 import { useI18n } from "../i18n/index.jsx";
 import { Arrow, PageBand } from "../components/Blocks.jsx";
+import { SocialCards } from "../components/SocialLinks.jsx";
 
 function CopyButton({ text }) {
   const { t } = useI18n();
@@ -49,7 +50,6 @@ export default function Contact() {
               <div className="r"><span>{c.director}</span><b>{c.directorName}</b></div>
               <div className="r"><span>{c.phone}</span><div className="row"><b className="num">{CONTACTS.phone}</b><CopyButton text={CONTACTS.phone} /></div></div>
               <div className="r"><span>{c.email}</span><div className="row"><b>{CONTACTS.email}</b><CopyButton text={CONTACTS.email} /></div></div>
-              <div className="r"><span>{c.instagram}</span><b><a href={CONTACTS.instagramUrl} target="_blank" rel="noopener noreferrer">{CONTACTS.instagram}</a></b></div>
               <div className="r"><span>{c.address}</span><b>{c.vivaAddress}</b></div>
             </div>
             <div className="cc">
@@ -59,6 +59,9 @@ export default function Contact() {
               <div className="r"><span>{c.docs}</span><b>{c.omegaDocs}</b></div>
             </div>
           </div>
+
+          <div className="eyebrow" style={{ marginTop: 40 }}>{t.social.title}</div>
+          <SocialCards />
 
           <form className="form" noValidate onSubmit={submit}>
             <div className="full"><h3 style={{ fontSize: 24 }}>{c.formTitle}</h3></div>

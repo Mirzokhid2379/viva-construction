@@ -121,6 +121,7 @@ export default {
     send: "Yuborish", err: "Ism va telefon yoki pochtani kiriting.", ok: "So‘rov qabul qilindi. Tez orada bog‘lanamiz.",
     copy: "Nusxalash", copied: "Nusxalandi",
   },
+  social: { label: "Ijtimoiy tarmoqlar", title: "Bizni kuzating", open: "Ochish" },
   notFound: { title: "Sahifa topilmadi", back: "Bosh sahifaga qaytish" },
   footer: { about: "Quyosh va issiqlik elektr stansiyalari, energiya saqlash tizimlari. Toshkent, 2024-yildan.", site: "Sayt", mapLink: "Qurilgan joylar xaritasi", projects: "Loyihalar", note: "Xaritadagi joylashuvlar taxminiy" },
 

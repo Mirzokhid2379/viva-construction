@@ -121,6 +121,7 @@ export default {
     send: "Send", err: "Please enter your name and a phone number or email.", ok: "Request received. We will be in touch shortly.",
     copy: "Copy", copied: "Copied",
   },
+  social: { label: "Social media", title: "Follow us", open: "Open" },
   notFound: { title: "Page not found", back: "Back to home" },
   footer: { about: "Solar and thermal power plants, battery energy storage. Tashkent, since 2024.", site: "Site", mapLink: "Project map", projects: "Projects", note: "Map locations are approximate" },
 

@@ -19,6 +19,12 @@ export const PARTNERS = ["Energy China", "Larsen & Toubro", "ACWA Power", "UET C
 export const CONTACTS = {
   phone: "+998 33 002 22 24",
   email: "khumoyun2020@gmail.com",
-  instagram: "@vivaconstructions.uz",
-  instagramUrl: "https://www.instagram.com/vivaconstructions.uz/",
 };
+
+// Ijtimoiy tarmoqlar. `ready: false` — havola hali taxminiy, haqiqiysini bilganda shu yerga yozing va true qiling.
+export const SOCIALS = [
+  { id: "telegram", name: "Telegram", handle: "@vivaconstructions", url: "https://t.me/vivaconstructions", ready: false },
+  { id: "instagram", name: "Instagram", handle: "@vivaconstructions.uz", url: "https://www.instagram.com/vivaconstructions.uz/", ready: true },
+  { id: "youtube", name: "YouTube", handle: "@vivaconstructions", url: "https://www.youtube.com/@vivaconstructions", ready: false },
+  { id: "facebook", name: "Facebook", handle: "vivaconstructions", url: "https://www.facebook.com/vivaconstructions", ready: false },
+];
