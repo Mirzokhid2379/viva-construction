@@ -540,3 +540,25 @@ footer .f-contact .f-tel{font-size:18px;font-weight:500;color:var(--night-ink);l
 .cert-owner b{display:block;font-family:var(--f-display);font-stretch:110%;font-size:22px;margin-top:4px}
 .cert-owner p{margin:4px 0 0;font-size:14px;color:var(--muted)}
 @media (max-width:560px){.cert-owner{gap:14px;padding:12px}.co-logo{width:96px;height:76px}.cert-owner b{font-size:18px}}
+
+/* Ishga tushirish marosimi (bosh sahifa) */
+.cer{position:relative;overflow:hidden;background:var(--night);color:var(--night-ink);padding-block:clamp(56px,8vw,104px)}
+.cer .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,4vw,64px);align-items:center}
+.cer-badge{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);padding:7px 14px;border-radius:999px;background:rgba(124,195,238,.1);box-shadow:inset 0 0 0 1px rgba(124,195,238,.3)}
+.cer-badge i{width:8px;height:8px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 0 rgba(61,220,151,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(61,220,151,0)}100%{box-shadow:0 0 0 0 rgba(61,220,151,0)}}
+.cer h2{color:#fff;margin-top:18px;font-size:clamp(30px,3.8vw,50px)}
+.cer-txt p{color:var(--night-muted);font-size:clamp(15.5px,1.3vw,17px);margin:18px 0 24px;max-width:54ch}
+.cer-kv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--night-line);margin-bottom:28px}
+.cer-kv div{padding:16px 12px 0 0}
+.cer-kv div+div{padding-left:16px;border-left:1px solid var(--night-line)}
+.cer-kv b{display:block;font-family:var(--f-display);font-stretch:108%;font-size:clamp(19px,2vw,28px);white-space:nowrap;line-height:1;color:#fff}
+.cer-kv span{display:block;margin-top:6px;font-size:13px;color:var(--night-muted)}
+.cer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(80px,9vw,128px);gap:10px}
+.cer-grid button{position:relative;padding:0;border:0;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--night-2)}
+.cer-grid button.big{grid-column:1/-1;grid-row:span 3;border-radius:18px;box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
+.cer-grid img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.cer-grid button:hover img{transform:scale(1.04)}
+.cer-date{position:absolute;left:14px;bottom:14px;background:rgba(14,36,60,.75);backdrop-filter:blur(6px);color:#fff;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:999px}
+@media (max-width:960px){.cer .wrap{grid-template-columns:1fr}.cer-grid{grid-auto-rows:clamp(64px,18vw,120px)}}
+@media (max-width:480px){.cer-kv div+div{padding-left:10px}.cer-grid{gap:6px}}
