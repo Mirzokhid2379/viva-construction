@@ -461,6 +461,7 @@ footer .f-contact .f-tel{font-size:18px;font-weight:500;color:var(--night-ink);l
 .pr-count{position:absolute;left:14px;bottom:14px;background:rgba(14,36,60,.72);backdrop-filter:blur(6px);color:#fff;font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px}
 .pr-thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 .pr-thumbs button{aspect-ratio:4/3;border-radius:10px}
+.pr-thumbs img{object-position:center 35%}
 .pr-more{position:absolute;inset:0;display:grid;place-items:center;background:rgba(14,36,60,.62);color:#fff;font-family:var(--f-display);font-size:20px;font-weight:700}
 .pr-stage{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
 .pr-stage.in{opacity:1;transform:none}
