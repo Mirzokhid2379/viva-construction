@@ -3,6 +3,7 @@ import { PageTitle } from "../seo/Head.jsx";
 import { PROJECTS } from "../data/projects.js";
 import { useI18n, useProject, useProjects } from "../i18n/index.jsx";
 import { img } from "../components/Img.js";
+import Cover from "../components/Cover.jsx";
 import { MiniMap } from "../components/UzMap.jsx";
 import { useLightbox } from "../components/Lightbox.jsx";
 import { Closing, SectionHead } from "../components/Blocks.jsx";
@@ -55,7 +56,7 @@ export default function ProjectDetail() {
         <section className="ph-hero">
           <div className="wrap">
             <HeroText p={p} />
-            <div className="frame" style={{ backgroundImage: `url(${img(p.img)})` }} />
+            <Cover k={p.img} type={p.type} className="frame">{!p.img && <span className="np-note">{d.noPhoto}</span>}</Cover>
           </div>
         </section>
       )}
@@ -118,7 +119,7 @@ export default function ProjectDetail() {
         </section>
       )}
 
-      <section style={{ paddingTop: 0 }}>
+      {p.photos.length > 0 && <section style={{ paddingTop: 0 }}>
         <div className="wrap">
           <SectionHead eyebrow={d.galEyebrow} title={d.galTitle}>{d.galText(p.photos.length)}</SectionHead>
           <div className="gal">
@@ -129,14 +130,14 @@ export default function ProjectDetail() {
             ))}
           </div>
         </div>
-      </section>
+      </section>}
 
       <section style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="nextp">
             {[[d.prev, prev], [d.next, next]].map(([label, q]) => (
               <Link key={label} to={`/loyiha/${q.id}`}>
-                <div className="im" style={{ backgroundImage: `url(${img(q.img)})` }} />
+                <Cover k={q.img} type={q.type} className="im" />
                 <div><span>{label}</span><b>{q.t}</b></div>
               </Link>
             ))}

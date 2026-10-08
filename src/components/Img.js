@@ -1,2 +1,2 @@
-// Rasm kalitini fayl manziliga aylantiradi: "v_aerial" -> "/images/v-aerial.webp"
+// Rasm kalitini fayl manziliga aylantiradi: "f_hero" -> "/images/f-hero.webp"
 export const img = (key) => `/images/${key.replace(/_/g, "-")}.webp`;

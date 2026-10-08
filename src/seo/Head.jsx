@@ -20,14 +20,14 @@ export function SiteHead() {
     setTag('link[rel="icon"]', "link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" });
     setTag('link[rel="apple-touch-icon"]', "link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" });
     setTag('meta[name="theme-color"]', "meta", { name: "theme-color", content: "#132E49" });
-    setTag('link[rel="preload"][as="image"]', "link", { rel: "preload", as: "image", href: "/images/v-aerial.webp" });
+    setTag('link[rel="preload"][as="image"]', "link", { rel: "preload", as: "image", href: "/images/f-hero.webp" });
   }, []);
   useEffect(() => {
     document.documentElement.lang = t.htmlLang;
     setTag('meta[name="description"]', "meta", { name: "description", content: t.meta.description });
     setTag('meta[property="og:site_name"]', "meta", { property: "og:site_name", content: "VIVA Construction" });
     setTag('meta[property="og:description"]', "meta", { property: "og:description", content: t.meta.description });
-    setTag('meta[property="og:image"]', "meta", { property: "og:image", content: "/images/v-aerial.webp" });
+    setTag('meta[property="og:image"]', "meta", { property: "og:image", content: "/images/f-hero.webp" });
   }, [t]);
   return null;
 }

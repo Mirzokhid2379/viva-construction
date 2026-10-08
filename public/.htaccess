@@ -11,7 +11,7 @@
 # Rasmlar va JS/CSS uzoq keshlanadi
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 day"
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"

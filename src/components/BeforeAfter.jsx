@@ -9,7 +9,7 @@ export default function BeforeAfter() {
   return (
     <div className="cmp" style={{ "--x": `${x}%` }}>
       <div className="a" style={{ backgroundImage: `url(${img("v_start")})` }} />
-      <div className="b" style={{ backgroundImage: `url(${img("v_aerial")})` }} />
+      <div className="b" style={{ backgroundImage: `url(${img("f_hero")})` }} />
       <span className="lab" style={{ left: 14 }}>{t.feat.before}</span>
       <span className="lab" style={{ right: 14 }}>{t.feat.after}</span>
       <div className="h" />

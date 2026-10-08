@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { img } from "./Img.js";
+import Cover from "./Cover.jsx";
 import { useI18n, useProjects } from "../i18n/index.jsx";
 
 export function Status({ st }) {
@@ -14,7 +14,7 @@ export default function ProjectCard({ p }) {
   return (
     <Link className="pc" to={`/loyiha/${p.id}`}>
       <div className="im">
-        <div style={{ backgroundImage: `url(${img(p.img)})` }} />
+        <Cover k={p.img} type={p.type} />
         <span className="cap num">{p.cap}<small>{p.capUnit}</small></span>
       </div>
       <div className="meta"><span>{p.regName} · {t.types[p.type]}</span><Status st={p.st} /></div>

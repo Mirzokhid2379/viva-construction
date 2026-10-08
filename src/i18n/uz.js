@@ -71,7 +71,7 @@ export default {
   },
   closing: { title: "Har qanday qurilishni bizga ishoning!", text: "Texnik topshiriqni yuboring: jamoa, texnika va muddatlar bo‘yicha taklif tayyorlaymiz.", btn: "Bog‘lanish" },
   projectsPage: { title: "Loyihalar", lead: (n, d, w) => `${n} ta elektr stansiyasi: ${d} tasi topshirilgan, ${w} tasi hozir qurilmoqda.` },
-  detail: {
+  detail: { noPhoto: "Sifatli fotosuratlar tez orada",
     company: "Kompaniya", role: "Roli", partners: "Hamkorlar", status: "Holati", scope: "Biz bajargan ishlar",
     progress: (p) => `Muddatning ${p}% o‘tdi`, end: (e) => `Yakun: ${e}`, started: (m) => `Boshlangan: 02.01.2026 · muddat ${m} oy`,
     infraEyebrow: "Muhandislik infratuzilmasi", infraTitle: "Maydondan tashqari ham",
@@ -90,8 +90,8 @@ export default {
     lifeEyebrow: "Qurilish maydonida", lifeTitle: "Xavfsizlik, sharoit va natija", lifeText: "Kartani bosing — fotosuratlar ochiladi.",
     photos: (n) => `${n} ta surat`,
     life: [
-      { title: "Xavfsizlik instruktaji", text: "Har bir ishchi maydonga chiqishdan oldin HSE instruktajidan o‘tadi.", captions: ["Ertalabki xavfsizlik yig‘ilishi", "Ishchilar bilan instruktaj", "O‘quv xonasida mashg‘ulot", "Brigada bilan uchrashuv"] },
-      { title: "Ishchilar shaharchasi", text: "Maydonda yotoqxona, oshxona, beton yo‘laklar va chiqindilarni ajratib yig‘ish tizimi.", captions: ["Yotoqxona bloklari", "Beton yo‘laklar", "Oshxona va ovqatlanish zali", "Ofis konteynerlari"] },
+      { title: "Nazorat va xavfsizlik", text: "Har bir bosqichda muhandislar va texnik nazorat maydonda: o‘lchovlar, tekshiruvlar va HSE talablari.", captions: ["Muhandislar va brigada maydonda", "Geodezik o‘lchovlar", "Texnik nazorat", "Poydevor o‘qlarini tekshirish"] },
+      { title: "Ishchilar shaharchasi", text: "Maydonda yotoqxona, oshxona, ofis, ustaxona va omborlar — jamoa uchun to‘liq sharoit.", captions: ["Qurilish lageri, yuqoridan", "Ustaxona va omborlar", "Lager hududi", "Material va texnika maydoni", "Ofis va xizmat binolari"] },
       { title: "Jamoa mukofoti", text: "Nurobod QESda xavfsiz va sifatli ish uchun L&T Construction jamoamizni taqdirladi.", captions: ["Mukofotlash marosimi, Nurobod QES"] },
     ],
     docsEyebrow: "Hujjatlar", docsTitle: "Litsenziya va sertifikatlar", docsText: "Asl nusxalari so‘rov bo‘yicha taqdim etiladi.",
@@ -170,7 +170,7 @@ export default {
       d: "Samarqand viloyatidagi batareyali energiya saqlash tizimi. Batareya konteynerlari uchun maydon, poydevorlar, po‘lat konstruksiyalar va elektr ishlarini bajaramiz.",
       stats: [["334 MVt", "quvvat"], ["500 MVt·soat", "sig‘im"], ["3", "ish yo‘nalishi"], ["UET", "hamkor"]],
       scope: ["Qurilish ishlari: ta’minot va montaj", "Po‘lat konstruksiyalarni o‘rnatish", "Elektr montaj ishlari"],
-      gal: ["Majmua umumiy ko‘rinishi", "Batareya bloklari, yuqoridan", "Batareya konteynerlari", "Bloklar qatori", "Konteynerlar maydoni", "Podstansiya va boshqaruv binosi", "Ochiq taqsimlash qurilmasi", "Kuch transformatori", "Elektr montaj ishlari", "Boshqaruv binosi qurilishi", "Qurilish lageri", "Hudud sun’iy yo‘ldoshdan"],
+      gal: ["Majmua umumiy ko‘rinishi", "Batareya bloklari, yuqoridan", "Batareya konteynerlari", "Bloklar qatori", "Konteynerlar maydoni", "Podstansiya va boshqaruv binosi", "Ochiq taqsimlash qurilmasi", "Kuch transformatori", "Elektr montaj ishlari", "Boshqaruv binosi qurilishi", "Qurilish lageri", "Devor terish", "Materiallarni kran bilan tushirish"],
     },
     buxoro: {
       t: "Buxoro QES", sub: "500 MVt fotoelektr stansiyasi", place: "Buxoro viloyati, Qorovulbozor tumani", role: "sub",

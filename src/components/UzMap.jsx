@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { GEO } from "../data/geo.js";
 import { REGIONS, TYPE_COLOR } from "../data/projects.js";
 import { useI18n, useProjects } from "../i18n/index.jsx";
-import { img } from "./Img.js";
+import Cover from "./Cover.jsx";
 
 // Uzunlik/kenglikni xarita koordinatasiga aylantirish
 export const proj = (lon, lat) => [(lon - GEO.L0) * GEO.k * GEO.sx, (GEO.B1 - lat) * GEO.sx];
@@ -95,7 +95,7 @@ function BigMap({ projects, active, setActive }) {
       <div className={`tip${tp ? " show" : ""}`} style={tp ? { left: tip.left, top: tip.top } : undefined}>
         {tp && (
           <>
-            <div className="im" style={{ backgroundImage: `url(${img(tp.img)})` }} />
+            <Cover k={tp.img} type={tp.type} className="im" />
             <div className="bd"><b>{tp.t}</b><span>{tp.sub}<br />{tp.place}</span></div>
           </>
         )}

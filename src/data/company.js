@@ -2,11 +2,11 @@
 
 export const FLEET = [16, 12, 10, 5, 4, 3, 3, 2, 2, 2]; // nomlari: t.company.fleet
 export const SITE_LIFE = [
-  ["sf1", "sf2", "sf3", "sf4"],
-  ["mb1", "mb2", "mb3", "mb4"],
+  ["f_eng1", "f_geo1", "f_eng2", "f_geo2"],
+  ["s_camp", "s_camp2", "s_camp3", "f_camp", "f_base"],
   ["aw1"],
 ];
-export const STEPS = ["f_geo1", "nu8", "nh3", "f_mnt1", "nu16"];
+export const STEPS = ["f_geo1", "f_fnd1", "f_tow", "f_mnt1", "s_el1"];
 export const CONTRACT_DATES = ["14.11.2023", "28.11.2023", "06.02.2024", "19.02.2024", "21.05.2024", "28.11.2025"];
 export const CERT_CODES = [
   "№ 1216814",

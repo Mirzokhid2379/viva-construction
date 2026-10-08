@@ -71,7 +71,7 @@ export default {
   },
   closing: { title: "Trust us with any construction project!", text: "Send us your technical brief and we will propose a team, equipment and timeline.", btn: "Contact us" },
   projectsPage: { title: "Projects", lead: (n, d, w) => `${n} power plants: ${d} completed, ${w} under construction.` },
-  detail: {
+  detail: { noPhoto: "High-quality photos coming soon",
     company: "Company", role: "Role", partners: "Partners", status: "Status", scope: "Our scope of work",
     progress: (p) => `${p}% of the schedule elapsed`, end: (e) => `Completion: ${e}`, started: (m) => `Started 02.01.2026 · ${m}-month schedule`,
     infraEyebrow: "Engineering infrastructure", infraTitle: "Beyond the main site",
@@ -90,8 +90,8 @@ export default {
     lifeEyebrow: "On site", lifeTitle: "Safety, conditions and results", lifeText: "Click a card to open the photos.",
     photos: (n) => `${n} ${n === 1 ? "photo" : "photos"}`,
     life: [
-      { title: "Safety induction", text: "Every worker completes an HSE induction before going on site.", captions: ["Morning safety briefing", "Induction for workers", "Classroom session", "Meeting with the crew"] },
-      { title: "Workers’ camp", text: "The site has dormitories, a canteen, concrete walkways and waste sorting.", captions: ["Dormitory blocks", "Concrete walkways", "Canteen and dining hall", "Office containers"] },
+      { title: "Supervision and safety", text: "Engineers and technical supervision are on site at every stage: surveys, inspections and HSE requirements.", captions: ["Engineers and crew on site", "Survey works", "Technical supervision", "Checking foundation axes"] },
+      { title: "Workers’ town", text: "Dormitories, canteen, offices, workshops and warehouses on site — everything the team needs.", captions: ["Construction camp from above", "Workshops and storage", "Camp area", "Materials and machinery yard", "Office and service buildings"] },
       { title: "Team award", text: "L&T Construction recognised our team for safe, high-quality work at Nurabad Solar PV.", captions: ["Award ceremony, Nurabad Solar PV"] },
     ],
     docsEyebrow: "Documents", docsTitle: "License and certificates", docsText: "Originals are available on request.",
@@ -170,7 +170,7 @@ export default {
       d: "A battery energy storage system in Samarkand region. We prepare the site for battery containers and build foundations, steel structures and electrical systems.",
       stats: [["334 MW", "capacity"], ["500 MWh", "storage"], ["3", "work packages"], ["UET", "partner"]],
       scope: ["Civil works: supply and installation", "Steel structure installation", "Electrical installation"],
-      gal: ["Complex overview", "Battery blocks from above", "Battery containers", "A row of blocks", "Container field", "Substation and control building", "Open switchyard", "Power transformer", "Electrical installation", "Control building under construction", "Construction camp", "Site from satellite"],
+      gal: ["Complex overview", "Battery blocks from above", "Battery containers", "A row of blocks", "Container field", "Substation and control building", "Open switchyard", "Power transformer", "Electrical installation", "Control building under construction", "Construction camp", "Bricklaying", "Unloading materials by crane"],
     },
     buxoro: {
       t: "Bukhara Solar PV", sub: "500 MW photovoltaic plant", place: "Bukhara region, Karaulbazar district", role: "sub",

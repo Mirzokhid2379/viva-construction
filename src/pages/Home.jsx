@@ -18,7 +18,7 @@ function Hero() {
   const h = t.hero;
   return (
     <section className="hero">
-      <div className="ph" style={{ backgroundImage: `url(${img("v_aerial")})` }} />
+      <div className="ph" style={{ backgroundImage: `url(${img("f_hero")})` }} />
       <Watermark />
       <div className="wrap">
         <div className="eyebrow hb">{h.eyebrow.map((x) => <span key={x}>{x}</span>)}</div>
