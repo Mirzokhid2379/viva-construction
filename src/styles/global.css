@@ -531,3 +531,12 @@ footer .f-contact .f-tel{font-size:18px;font-weight:500;color:var(--night-ink);l
   .pr-wstats b{color:var(--amber-ink)}
   .pr-thumbs.w3{order:2;margin-top:0}
 }
+
+/* Sertifikatlar egasi: OMEGA logosi */
+.cert-owner{display:flex;align-items:center;gap:22px;margin-bottom:14px;padding:16px 22px 16px 16px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.co-logo{flex:none;display:grid;place-items:center;width:132px;height:100px;border-radius:12px;background:#fff;padding:8px 12px;box-shadow:inset 0 0 0 1px rgba(11,20,38,.06)}
+.co-logo img{display:block;max-width:100%;max-height:100%;width:auto;height:auto}
+.cert-owner .k{display:block;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-ink)}
+.cert-owner b{display:block;font-family:var(--f-display);font-stretch:110%;font-size:22px;margin-top:4px}
+.cert-owner p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+@media (max-width:560px){.cert-owner{gap:14px;padding:12px}.co-logo{width:96px;height:76px}.cert-owner b{font-size:18px}}

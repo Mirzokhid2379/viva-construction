@@ -56,7 +56,7 @@ export default {
     text: "Har bir stansiyada shu besh bosqich. Bosh pudratchi uskunani yetkazadi, biz uni o‘rnatish uchun hamma narsani tayyorlaymiz.",
     items: [["Maydonni tayyorlash", "Geodeziya, tekislash, yo‘llar"], ["Qoziq va poydevor", "Qoziq qoqish, MVPS va uskuna poydevorlari"], ["Metall konstruksiya", "Trekerlar va po‘lat tayanchlar"], ["Panel va uskunalar", "Modullar, batareya konteynerlari"], ["Kabel va elektr", "Transheyalar, kabel, ulanish"]],
   },
-  trust: {
+  trust: { ownerK: "Hujjatlar egasi", owner: "Quyidagi litsenziya va ISO sertifikatlari OMEGA Energy Group MChJ nomiga berilgan.",
     eyebrow: "Ishonch",
     title: "Litsenziya va xalqaro sertifikatlar",
     text: "OMEGA Energy Group: davlat litsenziyasi va uchta ISO menejment tizimi sertifikati.",

@@ -51,6 +51,11 @@ export function Closing() {
 export function Certificates() {
   const { t } = useI18n();
   return (
+    <>
+    <div className="cert-owner">
+      <span className="co-logo"><img src="/images/omega-logo.webp" alt="OMEGA Energy Group" width="520" height="437" loading="lazy" /></span>
+      <div><span className="k">{t.trust.ownerK}</span><b>OMEGA Energy Group</b><p>{t.trust.owner}</p></div>
+    </div>
     <div className="trust">
       {t.trust.items.map(([name, text, valid], i) => (
         <div className="tr" key={CERT_CODES[i]}>
@@ -61,6 +66,7 @@ export function Certificates() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 
