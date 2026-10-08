@@ -25,6 +25,7 @@ export default function Footer() {
           <div>
             <h4>{t.footer.site}</h4>
             <Link to="/loyihalar">{t.nav.projects}</Link>
+            <Link to="/jarayon">{t.process.title}</Link>
             <Link to="/xarita">{t.footer.mapLink}</Link>
             <Link to="/kompaniya">{t.nav.company}</Link>
             <Link to="/aloqa">{t.nav.contact}</Link>

@@ -9,6 +9,7 @@ import { SiteHead } from "./seo/Head.jsx";
 const Projects = lazy(() => import("./pages/Projects.jsx"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail.jsx"));
 const Company = lazy(() => import("./pages/Company.jsx"));
+const Process = lazy(() => import("./pages/Process.jsx"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/xarita" element={<Home />} />
             <Route path="/loyihalar" element={<Projects />} />
             <Route path="/loyiha/:id" element={<ProjectDetail />} />
+            <Route path="/jarayon" element={<Process />} />
             <Route path="/kompaniya" element={<Company />} />
             <Route path="/aloqa" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

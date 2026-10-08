@@ -9,6 +9,7 @@ import { Watermark } from "../components/VivaMark.jsx";
 import MapSection from "../components/UzMap.jsx";
 import { ProjectGrid } from "../components/ProjectCard.jsx";
 import { Arrow, Certificates, Closing, Partners, SectionHead } from "../components/Blocks.jsx";
+import BeforeAfter from "../components/BeforeAfter.jsx";
 
 const fmt = (n, lang) => Math.round(n).toLocaleString(lang === "en" ? "en-US" : "ru-RU").replace(/ /g, " ");
 
@@ -46,22 +47,6 @@ function Figures() {
         <div className="fig"><b className="num">{fmt(totalMW("bess"), lang)}<small>{u}</small></b><span>{t.figs.storage}</span></div>
         <div className="fig"><b className="num">500<small>+</small></b><span>{t.figs.staff}</span></div>
       </div>
-    </div>
-  );
-}
-
-// "Oldin va keyin" — chiziqni surib solishtirish
-function BeforeAfter() {
-  const { t } = useI18n();
-  const [x, setX] = useState(50);
-  return (
-    <div className="cmp" style={{ "--x": `${x}%` }}>
-      <div className="a" style={{ backgroundImage: `url(${img("v_start")})` }} />
-      <div className="b" style={{ backgroundImage: `url(${img("v_aerial")})` }} />
-      <span className="lab" style={{ left: 14 }}>{t.feat.before}</span>
-      <span className="lab" style={{ right: 14 }}>{t.feat.after}</span>
-      <div className="h" />
-      <input type="range" min="0" max="100" value={x} onChange={(e) => setX(e.target.value)} aria-label={t.feat.aria} />
     </div>
   );
 }
@@ -120,6 +105,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <div className="steps-more"><Link className="cta amber" to="/jarayon">{t.process.teaserBtn} <Arrow /></Link></div>
         </div>
       </section>
 

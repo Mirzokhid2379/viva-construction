@@ -6,7 +6,7 @@ export const SITE_LIFE = [
   ["mb1", "mb2", "mb3", "mb4"],
   ["aw1"],
 ];
-export const STEPS = ["v_prep", "nu8", "nh3", "sz5", "nu16"];
+export const STEPS = ["f_geo1", "nu8", "nh3", "f_mnt1", "nu16"];
 export const CONTRACT_DATES = ["14.11.2023", "28.11.2023", "06.02.2024", "19.02.2024", "21.05.2024", "28.11.2025"];
 export const CERT_CODES = [
   "№ 1216814",

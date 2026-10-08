@@ -25,6 +25,7 @@ export default function Header() {
 
   const links = [
     ["/loyihalar", t.nav.projects],
+    ["/jarayon", t.process.nav],
     ["/xarita", t.nav.map],
     ["/kompaniya", t.nav.company],
     ["/aloqa", t.nav.contact],
