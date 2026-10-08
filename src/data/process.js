@@ -10,7 +10,7 @@ export const STAGES = [
   // Alohida, katta ko‘rinishdagi bosqich (wide): YuK liniyasi va po‘lat minoralar
   { project: "fargona-bess", wide: true, photos: ["f_line4", "f_line1", "f_line5", "f_line6", "f_line7", "f_line2", "f_line3", "f_tow"] },
   // Obyekt infratuzilmasi: devor, nazorat binosi, omborxona, suv hovuzlari, kanalizatsiya
-  { project: "fargona-bess", photos: ["f_wall1", "f_wall2", "f_wall3", "f_wall4", "f_done1", "s_bld", "s_sub"] },
+  { project: "fargona-bess", photos: ["f_wall1", "w_brick", "w_fnd", "f_wall3", "w_sub", "w_plas", "w_inner", "w_bld", "s_bld"] },
   { project: "fargona-bess", photos: ["f_mnt1", "f_mnt2", "f_mnt3", "f_mnt4", "f_mnt5"] },
   { project: "fargona-bess", photos: ["s_tr", "s_el3", "s_el1", "s_el2", "s_el4", "s_oru"] },
   { project: "fargona-bess", photos: ["f_hero", "f_done1", "f_ctrl", "f_elec1", "f_elec2"] },
