@@ -53,7 +53,7 @@ export default {
   steps: {
     eyebrow: "Ish tartibi",
     title: "Biz nimani quramiz",
-    text: "Har bir stansiyada shu besh bosqich. Bosh pudratchi uskunani yetkazadi, biz uni o‘rnatish uchun hamma narsani tayyorlaymiz.",
+    text: "Asosiy ish yo‘nalishlarimiz. Bosh pudratchi uskunani yetkazadi, biz uni o‘rnatish uchun hamma narsani tayyorlaymiz.",
     items: [["Maydonni tayyorlash", "Geodeziya, tekislash, yo‘llar"], ["Qoziq va poydevor", "Qoziq qoqish, MVPS va uskuna poydevorlari"], ["Metall konstruksiya", "Trekerlar va po‘lat tayanchlar"], ["Panel va uskunalar", "Modullar, batareya konteynerlari"], ["Kabel va elektr", "Transheyalar, kabel, ulanish"]],
   },
   trust: { ownerK: "Hujjatlar egasi", owner: "Quyidagi litsenziya va ISO sertifikatlari OMEGA Energy Group MChJ nomiga berilgan.",

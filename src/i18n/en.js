@@ -53,7 +53,7 @@ export default {
   steps: {
     eyebrow: "How we work",
     title: "What we build",
-    text: "Every plant goes through these five stages. The general contractor supplies the equipment; we prepare everything needed to install it.",
+    text: "Our core areas of work. The general contractor supplies the equipment; we prepare everything needed to install it.",
     items: [["Site preparation", "Survey, grading, access roads"], ["Piles and foundations", "Pile driving, MVPS and equipment foundations"], ["Steel structures", "Trackers and steel supports"], ["Panels and equipment", "PV modules, battery containers"], ["Cabling and electrical", "Trenching, cabling, connection"]],
   },
   trust: { ownerK: "Document holder", owner: "The licence and ISO certificates below are issued to OMEGA Energy Group LLC.",
