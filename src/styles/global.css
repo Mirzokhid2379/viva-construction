@@ -494,3 +494,40 @@ footer .f-contact .f-tel{font-size:18px;font-weight:500;color:var(--night-ink);l
 .nophoto .np-ic svg{width:100%;height:100%;display:block}
 .nextp .nophoto .np-ic,.tip .nophoto .np-ic{width:44%}
 .np-note{position:absolute;left:16px;bottom:14px;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#C7D2E6}
+
+/* Katta, alohida bosqich (YuK liniyasi) */
+.pr-stage.wide{display:block;padding-block:clamp(40px,6vw,80px)}
+.pr-stage.wide::before{display:none}
+.pr-hero-img{position:relative;display:block;width:100%;padding:0;border:0;border-radius:22px;overflow:hidden;cursor:zoom-in;aspect-ratio:2/1;background:var(--night);box-shadow:0 30px 80px -30px rgba(11,20,38,.55)}
+.pr-hero-img img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.pr-hero-img:hover img{transform:scale(1.03)}
+.pr-hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,34,56,.92) 0%,rgba(13,34,56,.7) 38%,rgba(13,34,56,0) 70%)}
+.pr-hero-img .pr-count{left:auto;right:16px;z-index:2}
+.pr-wbox{position:relative}
+.pr-wtxt{position:absolute;left:clamp(16px,4vw,48px);top:50%;transform:translateY(-50%);width:min(540px,46%);padding:clamp(20px,3vw,40px);color:#fff;pointer-events:none}
+.pr-wtxt a{pointer-events:auto}
+.pr-wtxt .pr-no{-webkit-text-stroke-color:rgba(124,195,238,.7);font-size:clamp(64px,7vw,104px)}
+.pr-wtxt .eyebrow{color:#C7D2E6}
+.pr-wtxt h2{font-size:clamp(28px,3.4vw,46px);margin-top:10px;color:#fff}
+.pr-wtxt p{color:#D3DCEB;margin:14px 0 20px}
+.pr-wstats{display:flex;gap:28px;margin-bottom:20px}
+.pr-wstats b{display:block;font-family:var(--f-display);font-stretch:112%;font-size:clamp(30px,3.6vw,48px);line-height:1;color:var(--amber)}
+.pr-wstats span{display:block;margin-top:6px;font-size:13px;color:#C7D2E6}
+.pr-wtxt .pr-proj{color:#C7D2E6}.pr-wtxt .pr-proj b{color:#fff}
+.pr-thumbs.w3{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:12px}
+.pr-thumbs.w3 button{position:relative;display:block;padding:0;border:0;background:var(--line);cursor:zoom-in;overflow:hidden;aspect-ratio:16/9;border-radius:14px}
+.pr-thumbs.w3 img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.pr-thumbs.w3 button:hover img{transform:scale(1.04)}
+@media (max-width:900px){
+  .pr-stage.wide{display:flex;flex-direction:column;gap:18px}
+  .pr-wbox{display:flex;flex-direction:column;gap:18px}
+  .pr-wtxt{transform:none}
+  .pr-hero-img{aspect-ratio:4/3;order:1}
+  .pr-hero-img::after{background:linear-gradient(0deg,rgba(13,34,56,.5),rgba(13,34,56,0) 50%)}
+  .pr-wtxt{position:static;width:auto;padding:0;color:var(--ink);pointer-events:auto;order:0}
+  .pr-wtxt .pr-no{-webkit-text-stroke-color:color-mix(in srgb,var(--amber-ink) 55%,transparent)}
+  .pr-wtxt .eyebrow{color:var(--muted)}.pr-wtxt h2{color:var(--ink)}.pr-wtxt p{color:var(--muted)}
+  .pr-wstats span,.pr-wtxt .pr-proj{color:var(--muted)}.pr-wtxt .pr-proj b{color:var(--ink)}
+  .pr-wstats b{color:var(--amber-ink)}
+  .pr-thumbs.w3{order:2;margin-top:0}
+}

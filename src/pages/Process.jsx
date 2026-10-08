@@ -65,6 +65,31 @@ function Stage({ s, i, text, n, project, onOpen, refCb }) {
   const [main, ...rest] = s.photos;
   const thumbs = rest.slice(0, 4);
   const more = s.photos.length - 1 - thumbs.length;
+  if (s.wide) return (
+    <article className="pr-stage wide" id={`bosqich-${i + 1}`} ref={refCb}>
+      <div className="pr-wbox">
+      <button type="button" className="pr-hero-img" onClick={() => onOpen(0)} aria-label={`${pr.open}: ${text.t}`}>
+        <img src={img(main)} alt={text.t} loading="lazy" decoding="async" />
+        <span className="pr-count">{pr.photos(s.photos.length)}</span>
+      </button>
+      <div className="pr-wtxt">
+        <div className="pr-no" aria-hidden="true">{pad(i + 1)}</div>
+        <div className="eyebrow">{pr.stage} {i + 1} / {n}</div>
+        <h2>{text.t}</h2>
+        <p>{text.d}</p>
+        {text.stats && <div className="pr-wstats">{text.stats.map(([b, l]) => <div key={l}><b>{b}</b><span>{l}</span></div>)}</div>}
+        <Link className="pr-proj" to={`/loyiha/${s.project}`}>{pr.project}: <b>{project?.t}</b> <Arrow /></Link>
+      </div>
+      </div>
+      <div className="pr-thumbs w3">
+        {rest.map((k, j) => (
+          <button type="button" key={k} onClick={() => onOpen(j + 1)} aria-label={`${text.t} ${j + 2}`}>
+            <img src={img(k)} alt="" loading="lazy" decoding="async" />
+          </button>
+        ))}
+      </div>
+    </article>
+  );
   return (
     <article className={`pr-stage ${i % 2 ? "flip" : ""}`} id={`bosqich-${i + 1}`} ref={refCb}>
       <div className="pr-txt">
@@ -80,7 +105,7 @@ function Stage({ s, i, text, n, project, onOpen, refCb }) {
           <img src={img(main)} alt={text.t} loading={i < 1 ? "eager" : "lazy"} decoding="async" />
           <span className="pr-count">{pr.photos(s.photos.length)}</span>
         </button>
-        <div className="pr-thumbs">
+        <div className="pr-thumbs" style={{ gridTemplateColumns: `repeat(${Math.max(thumbs.length, 3)}, minmax(0, 1fr))` }}>
           {thumbs.map((k, j) => (
             <button type="button" key={k} onClick={() => onOpen(j + 1)} aria-label={`${text.t} ${j + 2}`}>
               <img src={img(k)} alt="" loading="lazy" decoding="async" />

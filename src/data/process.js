@@ -6,7 +6,9 @@ export const STAGES = [
   { project: "fargona-bess", photos: ["f_team", "f_geo1", "f_geo2", "f_dig", "f_exc"] },
   { project: "fargona-bess", photos: ["f_reb6", "f_reb1", "f_reb2", "f_reb3", "f_reb4", "f_reb5"] },
   { project: "fargona-bess", photos: ["f_fnd1", "f_fnd2", "f_fnd3", "f_fnd4", "f_fnd5"] },
-  { project: "fargona-bess", photos: ["f_col4", "f_col1", "f_col2", "f_col3", "f_tow"] },
+  { project: "fargona-bess", photos: ["f_col4", "f_col1", "f_col2", "f_col3"] },
+  // Alohida, katta ko‘rinishdagi bosqich (wide): YuK liniyasi va po‘lat minoralar
+  { project: "fargona-bess", wide: true, photos: ["f_line1", "f_line2", "f_line3", "f_tow"] },
   { project: "fargona-bess", photos: ["f_mnt1", "f_mnt2", "f_mnt3", "f_mnt4", "f_mnt5"] },
   { project: "fargona-bess", photos: ["s_tr", "s_el3", "s_el1", "s_el2", "s_el4", "s_oru"] },
   { project: "fargona-bess", photos: ["f_hero", "f_done1", "f_ctrl", "f_elec1", "f_elec2"] },
