@@ -82,9 +82,10 @@ function Stage({ s, i, text, n, project, onOpen, refCb }) {
       </div>
       </div>
       <div className="pr-thumbs w3">
-        {rest.map((k, j) => (
+        {rest.slice(0, 3).map((k, j) => (
           <button type="button" key={k} onClick={() => onOpen(j + 1)} aria-label={`${text.t} ${j + 2}`}>
             <img src={img(k)} alt="" loading="lazy" decoding="async" />
+            {j === 2 && rest.length > 3 && <span className="pr-more">+{rest.length - 3}</span>}
           </button>
         ))}
       </div>
