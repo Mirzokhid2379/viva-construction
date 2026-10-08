@@ -155,7 +155,7 @@ export default {
       stats: [["150 MVt", "quvvat"], ["300 MVt·soat", "sig‘im"], ["$144 mln", "loyiha investitsiyasi"], ["20 kun", "rejadan oldin"]],
       scope: ["Geodeziya, 12 ga maydonni tekislash, ~46 000 m³ tuproq ishlari", "150 tonnalik texnika uchun 4,5 km yo‘l", "Batareya, invertor va transformatorlar uchun ~10 000 m³ beton poydevor", "Yerosti suvlari muammosini muhandislik yechimi bilan bartaraf etish"],
       infra: [["39", "po‘lat tayanch, YuK liniyasi uchun"], ["2", "yopiq suv rezervuari"], ["8 × 32 m", "chaqmoqdan himoya minoralari"], ["800 m", "sel oqimi lotogi"], ["1 km", "himoya devori"], ["~400", "ishchi va mutaxassis"]],
-      gal: ["Tayyor majmua va podstansiya", "Boshqaruv binosi va ochiq taqsimlash qurilmasi", "Batareya bloklari qatorlari", "Konteynerlarni kran bilan o‘rnatish", "Konteyner poydevorga tushirilmoqda", "Kranlar va ustunlar montaji", "Armatura va qolip ishlari", "Tayyor beton poydevorlar", "Geodezik o‘lchovlar", "Elektr tayanchini yig‘ish", "Qurilish maydoni va lager", "Topshirilgan majmua, umumiy ko‘rinish"],
+      gal: ["Tayyor majmua va podstansiya", "Boshqaruv binosi va ochiq taqsimlash qurilmasi", "Batareya bloklari qatorlari", "Konteynerlarni kran bilan o‘rnatish", "Konteyner poydevorga tushirilmoqda", "Kranlar va ustunlar montaji", "Armatura va qolip ishlari", "Tayyor beton poydevorlar", "Geodezik o‘lchovlar", "Elektr tayanchini yig‘ish", "Qurilish maydoni va lager", "Topshirilgan majmua, umumiy ko‘rinish", "Majmua umumiy ko‘rinishi", "Batareya bloklari, yuqoridan", "Batareya konteynerlari", "Bloklar qatori", "Konteynerlar maydoni", "Podstansiya va boshqaruv binosi", "Ochiq taqsimlash qurilmasi", "Kuch transformatori", "Elektr montaj ishlari", "Boshqaruv binosi qurilishi", "Qurilish lageri", "Devor terish", "Materiallarni kran bilan tushirish"],
     },
     nurobod: {
       t: "Nurobod QES", sub: "500 MVt fotoelektr stansiyasi", place: "Samarqand viloyati, Nurobod tumani", role: "sub",
@@ -170,7 +170,7 @@ export default {
       d: "Samarqand viloyatidagi batareyali energiya saqlash tizimi. Batareya konteynerlari uchun maydon, poydevorlar, po‘lat konstruksiyalar va elektr ishlarini bajaramiz.",
       stats: [["334 MVt", "quvvat"], ["500 MVt·soat", "sig‘im"], ["3", "ish yo‘nalishi"], ["UET", "hamkor"]],
       scope: ["Qurilish ishlari: ta’minot va montaj", "Po‘lat konstruksiyalarni o‘rnatish", "Elektr montaj ishlari"],
-      gal: ["Majmua umumiy ko‘rinishi", "Batareya bloklari, yuqoridan", "Batareya konteynerlari", "Bloklar qatori", "Konteynerlar maydoni", "Podstansiya va boshqaruv binosi", "Ochiq taqsimlash qurilmasi", "Kuch transformatori", "Elektr montaj ishlari", "Boshqaruv binosi qurilishi", "Qurilish lageri", "Devor terish", "Materiallarni kran bilan tushirish"],
+      gal: ["Majmua, kechki ko‘rinish", "Batareya bloklari, yuqoridan", "Hudud sun’iy yo‘ldoshdan"],
     },
     buxoro: {
       t: "Buxoro QES", sub: "500 MVt fotoelektr stansiyasi", place: "Buxoro viloyati, Qorovulbozor tumani", role: "sub",
@@ -184,7 +184,7 @@ export default {
       d: "Nishon tumanidagi stansiyada uch bosqichda yer ishlari, kabel tarmoqlari va panellar montajini bajardik.",
       stats: [[mw(500), "quvvat"], ["3", "bosqich"], ["Energy China", "EPC"], ["2023–2024", "shartnomalar"]],
       scope: ["1, 2 va 3-bosqichlar", "Yer ishlari", "Kabel yotqizish va montaj", "Qurilish ishlari", "Quyosh panellarini o‘rnatish"],
-      gal: ["Treker yuritmasini o‘rnatish", "Treker o‘qini o‘rnatish", "Kabel transheyasi", "Ulanish qutisi montaji", "Tayanchlarni tekislash", "Kabel yotqizish"],
+      gal: ["Treker yuritmasini o‘rnatish", "Treker o‘qini o‘rnatish", "Kabel transheyasi", "Tayanchlarni tekislash"],
     },
     tolimarjon: {
       t: "Tolimarjon IES", sub: "900 MVt kombinatsiyalashgan siklli stansiya", place: "Qashqadaryo viloyati, Nuriston", role: "sub",

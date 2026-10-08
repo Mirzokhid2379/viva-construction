@@ -8,7 +8,7 @@ export const STAGES = [
   { project: "fargona-bess", photos: ["f_fnd1", "f_fnd2", "f_fnd3", "f_fnd4", "f_fnd5"] },
   { project: "fargona-bess", photos: ["f_col4", "f_col1", "f_col2", "f_col3", "f_tow"] },
   { project: "fargona-bess", photos: ["f_mnt1", "f_mnt2", "f_mnt3", "f_mnt4", "f_mnt5"] },
-  { project: "sazagan", photos: ["s_tr", "s_el3", "s_el1", "s_el2", "s_el4", "s_oru"] },
+  { project: "fargona-bess", photos: ["s_tr", "s_el3", "s_el1", "s_el2", "s_el4", "s_oru"] },
   { project: "fargona-bess", photos: ["f_hero", "f_done1", "f_done2", "f_done3", "f_done4"] },
 ];
 

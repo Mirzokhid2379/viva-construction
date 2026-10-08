@@ -155,7 +155,7 @@ export default {
       stats: [["150 MW", "capacity"], ["300 MWh", "storage"], ["$144M", "project investment"], ["20 days", "ahead of schedule"]],
       scope: ["Survey, grading of 12 ha, ~46,000 m³ of earthworks", "4.5 km road for 150-tonne equipment", "~10,000 m³ of concrete foundations for batteries, inverters and transformers", "Engineered solution to a groundwater problem"],
       infra: [["39", "steel towers for the HV line"], ["2", "covered water reservoirs"], ["8 × 32 m", "lightning protection masts"], ["800 m", "mudflow diversion channel"], ["1 km", "perimeter wall"], ["~400", "workers and specialists"]],
-      gal: ["Finished complex and substation", "Control building and switchyard", "Rows of battery blocks", "Lifting containers into place", "A container lowered onto its foundation", "Cranes and column works", "Rebar and formwork", "Finished concrete foundations", "Survey works", "Assembling a power-line tower", "Site and workers’ camp", "Completed complex, overview"],
+      gal: ["Finished complex and substation", "Control building and switchyard", "Rows of battery blocks", "Lifting containers into place", "A container lowered onto its foundation", "Cranes and column works", "Rebar and formwork", "Finished concrete foundations", "Survey works", "Assembling a power-line tower", "Site and workers’ camp", "Completed complex, overview", "Complex overview", "Battery blocks from above", "Battery containers", "A row of blocks", "Container field", "Substation and control building", "Open switchyard", "Power transformer", "Electrical installation", "Control building under construction", "Construction camp", "Bricklaying", "Unloading materials by crane"],
     },
     nurobod: {
       t: "Nurabad Solar PV", sub: "500 MW photovoltaic plant", place: "Samarkand region, Nurabad district", role: "sub",
@@ -170,7 +170,7 @@ export default {
       d: "A battery energy storage system in Samarkand region. We prepare the site for battery containers and build foundations, steel structures and electrical systems.",
       stats: [["334 MW", "capacity"], ["500 MWh", "storage"], ["3", "work packages"], ["UET", "partner"]],
       scope: ["Civil works: supply and installation", "Steel structure installation", "Electrical installation"],
-      gal: ["Complex overview", "Battery blocks from above", "Battery containers", "A row of blocks", "Container field", "Substation and control building", "Open switchyard", "Power transformer", "Electrical installation", "Control building under construction", "Construction camp", "Bricklaying", "Unloading materials by crane"],
+      gal: ["The complex at sunset", "Battery blocks from above", "Site from satellite"],
     },
     buxoro: {
       t: "Bukhara Solar PV", sub: "500 MW photovoltaic plant", place: "Bukhara region, Karaulbazar district", role: "sub",
@@ -184,7 +184,7 @@ export default {
       d: "At the Nishan district plant we carried out earthworks, cable networks and panel installation across three phases.",
       stats: [[mw(500), "capacity"], ["3", "phases"], ["Energy China", "EPC"], ["2023–2024", "contracts"]],
       scope: ["Phases 1, 2 and 3", "Earthworks", "Cable laying and installation", "Civil works", "Solar panel installation"],
-      gal: ["Installing a tracker drive", "Installing a tracker shaft", "Cable trench", "Junction box installation", "Aligning posts", "Cable laying"],
+      gal: ["Installing a tracker drive", "Installing a tracker shaft", "Cable trench", "Aligning posts"],
     },
     tolimarjon: {
       t: "Talimarjan TPP", sub: "900 MW combined-cycle plant", place: "Kashkadarya region, Nuriston", role: "sub",
