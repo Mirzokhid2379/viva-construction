@@ -56,7 +56,7 @@ export default {
     text: "Asosiy ish yo‘nalishlarimiz. Bosh pudratchi uskunani yetkazadi, biz uni o‘rnatish uchun hamma narsani tayyorlaymiz.",
     items: [["Maydonni tayyorlash", "Geodeziya, tekislash, yo‘llar"], ["Qoziq va poydevor", "Qoziq qoqish, MVPS va uskuna poydevorlari"], ["Metall konstruksiya", "Trekerlar va po‘lat tayanchlar"], ["Panel va uskunalar", "Modullar, batareya konteynerlari"], ["Kabel va elektr", "Transheyalar, kabel, ulanish"]],
   },
-  trust: { ownerK: "Hujjatlar egasi", owner: "Quyidagi litsenziya va ISO sertifikatlari OMEGA Energy Group MChJ nomiga berilgan.",
+  trust: { docsK: "Litsenziya hujjati", docsT: "Litsenziya № 1901129 · faol", docsP: "Qurilish va uy-joy kommunal xo‘jaligi vazirligi. Yuqori xavfli obyektlar: elektr liniyalari va podstansiyalar 0,4–500 kV, quyosh, shamol, gidro va issiqlik elektr stansiyalari.", page: "bet", open: "Hujjatni ochish", ownerK: "Hujjatlar egasi", owner: "Quyidagi litsenziya va ISO sertifikatlari OMEGA Energy Group MChJ nomiga berilgan.",
     eyebrow: "Ishonch",
     title: "Litsenziya va xalqaro sertifikatlar",
     text: "OMEGA Energy Group: davlat litsenziyasi va uchta ISO menejment tizimi sertifikati.",
@@ -194,7 +194,7 @@ export default {
       d: "Kombinatsiyalashgan siklli issiqlik elektr stansiyasida yer, kabel va qurilish ishlarini bajardik.",
       stats: [[mw(900), "quvvat"], ["3", "bosqich"], ["2", "xalqaro hamkor"], ["IES", "stansiya turi"]],
       scope: ["1, 2 va 3-bosqichlar", "Yer ishlari", "Kabel yotqizish va montaj", "Qurilish ishlari"],
-      gal: ["Og‘ir kran bilan montaj", "Monolit ishlar", "Ishga tushirilgan stansiya"],
+      gal: ["Bosh bino metall karkasi va poydevor armaturasi", "Sovutish minorasi armaturasi", "Ustunlar va poydevor plitasi", "Qolip ishlari va kran bilan montaj", "Monolit qavat qolipi", "Armatura bog‘lash ishlari", "Ustunlar qolip va havozalarda", "Ustunlar va bino karkasi", "Og‘ir kran bilan montaj", "Ishga tushirilgan stansiya"],
     },
     "navoiy-ies": {
       t: "Navoiy IES", sub: "650 MVt kombinatsiyalashgan siklli stansiya", place: "Navoiy viloyati", role: "sub",

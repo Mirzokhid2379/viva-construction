@@ -56,7 +56,7 @@ export default {
     text: "Our core areas of work. The general contractor supplies the equipment; we prepare everything needed to install it.",
     items: [["Site preparation", "Survey, grading, access roads"], ["Piles and foundations", "Pile driving, MVPS and equipment foundations"], ["Steel structures", "Trackers and steel supports"], ["Panels and equipment", "PV modules, battery containers"], ["Cabling and electrical", "Trenching, cabling, connection"]],
   },
-  trust: { ownerK: "Document holder", owner: "The licence and ISO certificates below are issued to OMEGA Energy Group LLC.",
+  trust: { docsK: "Licence document", docsT: "Licence No. 1901129 · active", docsP: "Ministry of Construction and Housing. High-risk facilities: power lines and substations 0.4–500 kV, solar, wind, hydro and thermal power plants.", page: "page", open: "Open document", ownerK: "Document holder", owner: "The licence and ISO certificates below are issued to OMEGA Energy Group LLC.",
     eyebrow: "Credentials",
     title: "License and international certificates",
     text: "OMEGA Energy Group holds a state license and three ISO management system certificates.",
@@ -194,7 +194,7 @@ export default {
       d: "At this combined-cycle thermal power plant we carried out earthworks, cabling and civil works.",
       stats: [[mw(900), "capacity"], ["3", "phases"], ["2", "international partners"], ["TPP", "plant type"]],
       scope: ["Phases 1, 2 and 3", "Earthworks", "Cable laying and installation", "Civil works"],
-      gal: ["Heavy-lift crane installation", "Cast-in-place concrete works", "Plant in operation"],
+      gal: ["Main building steel frame and foundation rebar", "Cooling tower reinforcement", "Columns and foundation slab", "Formwork and crane installation", "Formwork for a monolithic slab", "Rebar tying", "Columns in formwork and scaffolding", "Columns and building frame", "Heavy-lift crane installation", "Plant in operation"],
     },
     "navoiy-ies": {
       t: "Navoi TPP", sub: "650 MW combined-cycle plant", place: "Navoi region", role: "sub",

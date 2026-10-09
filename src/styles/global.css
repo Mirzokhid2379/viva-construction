@@ -562,3 +562,16 @@ footer .f-contact .f-tel{font-size:18px;font-weight:500;color:var(--night-ink);l
 .cer-date{position:absolute;left:14px;bottom:14px;background:rgba(14,36,60,.75);backdrop-filter:blur(6px);color:#fff;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:999px}
 @media (max-width:960px){.cer .wrap{grid-template-columns:1fr}.cer-grid{grid-auto-rows:clamp(64px,18vw,120px)}}
 @media (max-width:480px){.cer-kv div+div{padding-left:10px}.cer-grid{gap:6px}}
+
+/* Litsenziya hujjati sahifalari */
+.lic-docs{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;margin-bottom:14px;padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.lic-txt .k{display:block;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-ink)}
+.lic-txt b{display:block;font-family:var(--f-display);font-stretch:110%;font-size:22px;margin-top:4px}
+.lic-txt p{margin:6px 0 16px;font-size:14px;color:var(--muted);max-width:60ch}
+.lic-pages{display:flex;gap:14px}
+.lic-pages button{position:relative;padding:0;border:0;background:#fff;cursor:zoom-in;width:138px;aspect-ratio:930/1450;border-radius:8px;overflow:hidden;box-shadow:0 14px 30px -14px rgba(11,20,38,.45),0 0 0 1px rgba(11,20,38,.08);transition:transform .3s}
+.lic-pages button:nth-child(1){transform:rotate(-2deg)}.lic-pages button:nth-child(2){transform:rotate(2deg)}
+.lic-pages button:hover{transform:translateY(-4px) rotate(0)}
+.lic-pages img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.lic-pages span{position:absolute;left:8px;bottom:8px;background:rgba(14,36,60,.75);color:#fff;font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px}
+@media (max-width:640px){.lic-docs{grid-template-columns:1fr}.lic-pages{justify-content:center}.lic-pages button{width:42%}}

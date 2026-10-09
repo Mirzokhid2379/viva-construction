@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CERT_CODES, PARTNERS } from "../data/company.js";
 import { useI18n } from "../i18n/index.jsx";
 import { Watermark } from "./VivaMark.jsx";
+import { useLightbox } from "./Lightbox.jsx";
 
 export const Arrow = () => <span className="ar">→</span>;
 
@@ -50,11 +51,29 @@ export function Closing() {
 
 export function Certificates() {
   const { t } = useI18n();
+  const [openPhotos, lightbox] = useLightbox();
+  const pages = ["lic_1", "lic_2"].map((k, i) => [k, `${t.trust.docsT} · ${i + 1} ${t.trust.page}`]);
   return (
     <>
     <div className="cert-owner">
       <span className="co-logo"><img src="/images/omega-logo.webp" alt="OMEGA Energy Group" width="520" height="437" loading="lazy" /></span>
       <div><span className="k">{t.trust.ownerK}</span><b>OMEGA Energy Group</b><p>{t.trust.owner}</p></div>
+    </div>
+    <div className="lic-docs">
+      <div className="lic-txt">
+        <span className="k">{t.trust.docsK}</span>
+        <b>{t.trust.docsT}</b>
+        <p>{t.trust.docsP}</p>
+        <button type="button" className="cta line sm" onClick={() => openPhotos(pages, 0)}>{t.trust.open}</button>
+      </div>
+      <div className="lic-pages">
+        {pages.map(([k, c], i) => (
+          <button type="button" key={k} onClick={() => openPhotos(pages, i)} aria-label={c}>
+            <img src={`/images/${k.replace("_", "-")}.webp`} alt={c} loading="lazy" />
+            <span>{i + 1} {t.trust.page}</span>
+          </button>
+        ))}
+      </div>
     </div>
     <div className="trust">
       {t.trust.items.map(([name, text, valid], i) => (
@@ -66,6 +85,7 @@ export function Certificates() {
         </div>
       ))}
     </div>
+    {lightbox}
     </>
   );
 }
