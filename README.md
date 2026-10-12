@@ -76,3 +76,11 @@ npm run build
 - **Netlify / Vercel:** GitHub’ga joylab ulang. Netlify uchun `netlify.toml` tayyor.
 
 Domen: domen sozlamalarida `A` yozuvini hosting IP manziliga yo‘naltiring (hosting provayderingiz IP ni beradi).
+
+## SEO (Google, Yandex, Telegram/Facebook preview)
+
+- **Domen:** `site.config.js` dagi `SITE_URL` ni o‘z domeningizga almashtiring (masalan `https://vivaconstruction.uz`). Canonical, sitemap, og:image — hammasi shundan oladi.
+- **Sahifa sarlavha va tavsiflari (3 tilda):** `src/seo/meta.js` — `PAGES` va `KEYWORDS`.
+- **Kompaniya ma’lumotlari (Google uchun JSON-LD):** `index.html` ichidagi `application/ld+json` bloki.
+- `npm run build` dan keyin `dist/` ichida avtomatik paydo bo‘ladi: har bir sahifa uchun alohida `index.html`, `sitemap.xml`, `robots.txt`.
+- Ijtimoiy tarmoqlarda ko‘rinadigan rasm: `public/og-image.jpg` (1200×630).

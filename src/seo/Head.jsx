@@ -1,8 +1,14 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { useI18n } from "../i18n/index.jsx";
+import { SITE_URL } from "../../site.config.js";
+import { KEYWORDS, PAGES } from "./meta.js";
 
-// <head> ichidagi teglarni JSX dan boshqaradi: favicon, rang, tavsif, sarlavha, til.
-// index.html da faqat charset va viewport qoladi — ular brauzerga eng boshida kerak.
+// <head> teglarini JSX dan boshqaradi. Asosiy (statik) teglar index.html da ham bor —
+// JavaScript ishlatmaydigan botlar (Telegram, Facebook preview) ularni o‘qiydi.
+
+const OG_IMAGE = `${SITE_URL}/og-image.jpg`;
+const LOCALE = { uz: "uz_UZ", ru: "ru_RU", en: "en_US" };
 
 function setTag(selector, create, attrs) {
   let el = document.head.querySelector(selector);
@@ -12,33 +18,47 @@ function setTag(selector, create, attrs) {
   }
   Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
 }
+const meta = (name, content) => setTag(`meta[name="${name}"]`, "meta", { name, content });
+const prop = (property, content) => setTag(`meta[property="${property}"]`, "meta", { property, content });
 
-// Butun sayt uchun bir marta: favicon, theme-color, bosh rasmni oldindan yuklash
+// Butun sayt uchun: favicon, til, kalit so‘zlar
 export function SiteHead() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   useEffect(() => {
-    setTag('link[rel="icon"]', "link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" });
-    setTag('link[rel="apple-touch-icon"]', "link", { rel: "apple-touch-icon", href: "/apple-touch-icon.png" });
-    setTag('meta[name="theme-color"]', "meta", { name: "theme-color", content: "#132E49" });
     setTag('link[rel="preload"][as="image"]', "link", { rel: "preload", as: "image", href: "/images/f-hero.webp" });
   }, []);
   useEffect(() => {
     document.documentElement.lang = t.htmlLang;
-    setTag('meta[name="description"]', "meta", { name: "description", content: t.meta.description });
-    setTag('meta[property="og:site_name"]', "meta", { property: "og:site_name", content: "VIVA Construction" });
-    setTag('meta[property="og:description"]', "meta", { property: "og:description", content: t.meta.description });
-    setTag('meta[property="og:image"]', "meta", { property: "og:image", content: "/images/f-hero.webp" });
-  }, [t]);
+    meta("keywords", KEYWORDS[lang]);
+    prop("og:locale", LOCALE[lang]);
+  }, [t, lang]);
   return null;
 }
 
-// Har bir sahifa o‘z sarlavhasini qo‘yadi: <PageTitle title="Loyihalar" />
-export function PageTitle({ title }) {
-  const { t } = useI18n();
+// Har bir sahifa: <PageTitle title="..." description="..." />
+// title/description berilmasa, manzil bo‘yicha meta.js dagi matn olinadi.
+export function PageTitle({ title, full: fullTitle, description, noindex = false }) {
+  const { t, lang } = useI18n();
+  const { pathname: raw } = useLocation();
+  const pathname = raw.length > 1 ? raw.replace(/\/+$/, "") : raw;
   useEffect(() => {
-    const full = title ? `${title} — VIVA Construction` : t.meta.title;
+    const page = PAGES[lang][pathname];
+    const full = fullTitle || (page ? page[0] : title ? `${title} — VIVA Construction` : t.meta.title);
+    const desc = description || (page ? page[1] : t.meta.description);
+    const url = SITE_URL + (pathname === "/" ? "/" : pathname);
     document.title = full;
-    setTag('meta[property="og:title"]', "meta", { property: "og:title", content: full });
-  }, [title, t]);
+    meta("description", desc);
+    meta("robots", noindex ? "noindex, follow" : "index, follow, max-image-preview:large");
+    setTag('link[rel="canonical"]', "link", { rel: "canonical", href: url });
+    prop("og:type", "website");
+    prop("og:title", full);
+    prop("og:description", desc);
+    prop("og:url", url);
+    prop("og:image", OG_IMAGE);
+    meta("twitter:card", "summary_large_image");
+    meta("twitter:title", full);
+    meta("twitter:description", desc);
+    meta("twitter:image", OG_IMAGE);
+  }, [title, fullTitle, description, noindex, t, lang, pathname]);
   return null;
 }

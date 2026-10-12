@@ -7,7 +7,7 @@ export default function NotFound() {
   const { t } = useI18n();
   return (
     <div className="band tex">
-      <PageTitle title={t.notFound.title} />
+      <PageTitle title={t.notFound.title} noindex />
       <Watermark />
       <div className="wrap">
         <h1>{t.notFound.title}</h1>

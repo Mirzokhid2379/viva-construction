@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { PageTitle } from "../seo/Head.jsx";
+import { projectMeta } from "../seo/meta.js";
 import { PROJECTS } from "../data/projects.js";
 import { useI18n, useProject, useProjects } from "../i18n/index.jsx";
 import { img } from "../components/Img.js";
@@ -46,7 +47,7 @@ export default function ProjectDetail() {
 
   return (
     <>
-      <PageTitle title={p.t} />
+      <PageTitle full={projectMeta(p)[0]} description={projectMeta(p)[1]} />
       {p.big ? (
         <section className="ph-hero big">
           <div className="bgp" style={{ backgroundImage: `url(${img(p.img)})` }} />
