@@ -4,17 +4,17 @@ import ru from "./ru.js";
 import en from "./en.js";
 import { getProject, PROJECTS } from "../data/projects.js";
 
-export const LANGS = { uz, ru, en };
-export const LANG_CODES = ["uz", "ru", "en"];
-const KEY = "viva-lang";
+export const LANGS = { en, uz, ru };
+// Asosiy til — ingliz tili. Tartib: EN · UZ · RU
+export const LANG_CODES = ["en", "uz", "ru"];
+const KEY = "viva-lang-v2";
 
 function initialLang() {
   try {
     const saved = localStorage.getItem(KEY);
     if (saved && LANGS[saved]) return saved;
   } catch { /* localStorage yopiq bo‘lishi mumkin */ }
-  const nav = (navigator.language || "uz").slice(0, 2);
-  return nav === "ru" ? "ru" : nav === "en" ? "en" : "uz";
+  return "en";
 }
 
 const I18nContext = createContext(null);

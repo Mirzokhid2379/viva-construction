@@ -1,6 +1,6 @@
 // Bir nechta sahifada takrorlanadigan bloklar
 import { Link } from "react-router-dom";
-import { CERT_CODES, PARTNERS } from "../data/company.js";
+import { CERT_CODES, PARTNERS, CASA } from "../data/company.js";
 import { useI18n } from "../i18n/index.jsx";
 import { Watermark } from "./VivaMark.jsx";
 import { useLightbox } from "./Lightbox.jsx";
@@ -55,9 +55,12 @@ export function Certificates() {
   const pages = ["lic_1", "lic_2"].map((k, i) => [k, `${t.trust.docsT} · ${i + 1} ${t.trust.page}`]);
   return (
     <>
-    <div className="cert-owner">
-      <span className="co-logo"><img src="/images/omega-logo.webp" alt="OMEGA Energy Group" width="520" height="437" loading="lazy" /></span>
-      <div><span className="k">{t.trust.ownerK}</span><b>OMEGA Energy Group</b><p>{t.trust.owner}</p></div>
+    <div className="owners">
+      <div className="cert-owner">
+        <span className="co-logo"><img src="/images/omega-logo.webp" alt="OMEGA Energy Group" width="520" height="437" loading="lazy" /></span>
+        <div><span className="k">{t.trust.ownerK}</span><b>OMEGA Energy Group</b><p>{t.trust.owner}</p></div>
+      </div>
+      <CasaCard />
     </div>
     <div className="lic-docs">
       <div className="lic-txt">
@@ -96,6 +99,30 @@ export function Partners({ label }) {
     <div className="partners">
       <span className="eyebrow">{label || t.trust.partners}</span>
       {PARTNERS.map((x) => <b key={x}>{x}</b>)}
+    </div>
+  );
+}
+
+// Hamkor kompaniya CASA Construction: logo, sayt havolasi va guvohnomasi
+export function CasaCard() {
+  const { t } = useI18n();
+  const c = t.casa;
+  const [openPhotos, lightbox] = useLightbox();
+  return (
+    <div className="cert-owner casa">
+      <a className="co-logo casa" href={CASA.url} target="_blank" rel="noopener" aria-label="CASA Construction">
+        <img src="/images/casa-logo.svg" alt="CASA Construction" width="120" height="100" loading="lazy" />
+      </a>
+      <div>
+        <span className="k">{c.k}</span>
+        <b>{c.name}</b>
+        <p>{c.p}</p>
+        <div className="co-acts">
+          <a className="cta line sm" href={CASA.url} target="_blank" rel="noopener">{CASA.url.replace(/^https?:\/\//, "")} ↗</a>
+          <button type="button" className="cta line sm" onClick={() => openPhotos([["casa_guvohnoma", c.doc]], 0)}>{c.doc}</button>
+        </div>
+      </div>
+      {lightbox}
     </div>
   );
 }

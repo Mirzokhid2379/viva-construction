@@ -6,7 +6,7 @@ import path from "node:path";
 import { SITE_URL } from "../site.config.js";
 import { PAGES, projectMeta } from "../src/seo/meta.js";
 import { PROJECTS } from "../src/data/projects.js";
-import uz from "../src/i18n/uz.js";
+import en from "../src/i18n/en.js";
 
 const DIST = path.resolve("dist");
 const today = new Date().toISOString().slice(0, 10);
@@ -15,9 +15,9 @@ const esc = (s) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g
 let base = fs.readFileSync(path.join(DIST, "index.html"), "utf8").replaceAll("https://viva-site.placeholder", SITE_URL);
 fs.writeFileSync(path.join(DIST, "index.html"), base);
 
-const routes = Object.entries(PAGES.uz).map(([p, [title, desc]]) => ({ p, title, desc, pr: p === "/" ? "1.0" : "0.8" }));
+const routes = Object.entries(PAGES.en).map(([p, [title, desc]]) => ({ p, title, desc, pr: p === "/" ? "1.0" : "0.8" }));
 for (const pr of PROJECTS) {
-  const [title, desc] = projectMeta({ ...pr, ...uz.projects[pr.id] });
+  const [title, desc] = projectMeta({ ...pr, ...en.projects[pr.id] });
   routes.push({ p: `/loyiha/${pr.id}`, title, desc, pr: "0.7", img: pr.img });
 }
 

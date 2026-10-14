@@ -14,7 +14,7 @@ export const CERT_CODES = [
   "UZ.SMT.04-0032-26004672/26",
   "UZ.SMT.04-0032-26004673/26",
 ];
-export const PARTNERS = ["Energy China", "Larsen & Toubro", "ACWA Power", "UET Construction", "Calik Energy", "Mitsubishi Corporation"];
+export const PARTNERS = ["OMEGA Energy Group", "CASA Construction", "Energy China", "Larsen & Toubro", "ACWA Power", "UET Construction", "Calik Energy", "Mitsubishi Corporation"];
 
 export const CONTACTS = {
   phone: "+998 33 002 22 24",
@@ -29,3 +29,6 @@ export const SOCIALS = [
   { id: "youtube", name: "YouTube", handle: "", url: "" },
   { id: "facebook", name: "Facebook", handle: "", url: "" },
 ];
+
+// Hamkor kompaniya CASA Construction
+export const CASA = { url: "https://casaconstruction.uz" };

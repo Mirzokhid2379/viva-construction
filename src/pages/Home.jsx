@@ -10,7 +10,7 @@ import MapSection from "../components/UzMap.jsx";
 import { ProjectGrid } from "../components/ProjectCard.jsx";
 import { Arrow, Certificates, Closing, Partners, SectionHead } from "../components/Blocks.jsx";
 import BeforeAfter from "../components/BeforeAfter.jsx";
-import Ceremony from "../components/Ceremony.jsx";
+import { NewsTeaser } from "../components/News.jsx";
 
 const fmt = (n, lang) => Math.round(n).toLocaleString(lang === "en" ? "en-US" : "ru-RU").replace(/ /g, " ");
 
@@ -70,7 +70,6 @@ export default function Home() {
       <PageTitle />
       <Hero />
       <Figures />
-      <Ceremony />
       <MapSection />
 
       <section>
@@ -119,6 +118,7 @@ export default function Home() {
         </div>
       </section>
 
+      <NewsTeaser />
       <Closing />
     </>
   );

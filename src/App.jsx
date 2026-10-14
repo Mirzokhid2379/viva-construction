@@ -11,6 +11,7 @@ const ProjectDetail = lazy(() => import("./pages/ProjectDetail.jsx"));
 const Company = lazy(() => import("./pages/Company.jsx"));
 const Process = lazy(() => import("./pages/Process.jsx"));
 const Contact = lazy(() => import("./pages/Contact.jsx"));
+const News = lazy(() => import("./pages/News.jsx"));
 const NotFound = lazy(() => import("./pages/NotFound.jsx"));
 
 function ScrollToTop() {
@@ -36,6 +37,7 @@ export default function App() {
             <Route path="/loyihalar" element={<Projects />} />
             <Route path="/loyiha/:id" element={<ProjectDetail />} />
             <Route path="/jarayon" element={<Process />} />
+            <Route path="/yangiliklar" element={<News />} />
             <Route path="/kompaniya" element={<Company />} />
             <Route path="/aloqa" element={<Contact />} />
             <Route path="*" element={<NotFound />} />

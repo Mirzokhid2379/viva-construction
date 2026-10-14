@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PageTitle } from "../seo/Head.jsx";
-import { CONTACTS } from "../data/company.js";
+import { CASA, CONTACTS } from "../data/company.js";
 import { useI18n } from "../i18n/index.jsx";
 import { Arrow, PageBand } from "../components/Blocks.jsx";
 import { SocialCards } from "../components/SocialLinks.jsx";
@@ -58,6 +58,13 @@ export default function Contact() {
               <div className="r"><span>{c.address}</span><b>{c.omegaAddress}</b></div>
               <div className="r"><span>{c.activity}</span><b>{c.omegaActivity}</b></div>
               <div className="r"><span>{c.docs}</span><b>{c.omegaDocs}</b></div>
+            </div>
+            <div className="cc">
+              <h3>CASA Construction</h3>
+              <div className="r"><span>{c.address}</span><b>{t.casa.address}</b></div>
+              <div className="r"><span>{c.activity}</span><b>{t.casa.activity}</b></div>
+              <div className="r"><span>{c.docs}</span><b>{t.casa.docs}</b></div>
+              <div className="r"><span>{t.casa.site}</span><a className="maplink" href={CASA.url} target="_blank" rel="noopener">casaconstruction.uz ↗</a></div>
             </div>
           </div>
 

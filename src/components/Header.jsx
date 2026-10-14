@@ -21,12 +21,13 @@ export default function Header() {
   const { t } = useI18n();
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
-  useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => { setOpen(false); }, [pathname]);
 
   const links = [
     ["/loyihalar", t.nav.projects],
     ["/jarayon", t.process.nav],
     ["/xarita", t.nav.map],
+    ["/yangiliklar", t.nav.news],
     ["/kompaniya", t.nav.company],
     ["/aloqa", t.nav.contact],
   ];
