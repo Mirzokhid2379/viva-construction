@@ -6,7 +6,7 @@ export const SITE_LIFE = [
   ["s_camp", "s_camp2", "s_camp3", "f_camp", "f_base"],
   ["aw1"],
 ];
-export const STEPS = ["f_geo1", "f_fnd1", "f_tow", "f_mnt1", "s_el1"];
+export const STEPS = ["ew1", "f_fnd1", "f_tow", "f_mnt1", "s_el1"];
 export const CONTRACT_DATES = ["14.11.2023", "28.11.2023", "06.02.2024", "19.02.2024", "21.05.2024", "28.11.2025"];
 export const CERT_CODES = [
   "№ 1216814",
