@@ -24,7 +24,7 @@ export default function ProjectCard({ p }) {
   );
 }
 
-const FILTERS = ["all", "sol", "bess", "th", "now"];
+const FILTERS = ["all", "sol", "bess", "now"];
 
 // Saralash tugmalari bilan loyihalar to‘ri
 export function ProjectGrid() {

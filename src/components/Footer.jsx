@@ -4,7 +4,7 @@ import { useI18n, useProjects } from "../i18n/index.jsx";
 import { SocialIcons } from "./SocialLinks.jsx";
 import { CONTACTS } from "../data/company.js";
 
-const FOOTER_PROJECTS = ["fargona-bess", "nurobod", "sazagan", "buxoro", "tolimarjon"];
+const FOOTER_PROJECTS = ["fargona-bess", "nurobod", "sazagan", "buxoro", "nishon"];
 
 export default function Footer() {
   const { t } = useI18n();

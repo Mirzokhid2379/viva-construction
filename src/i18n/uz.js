@@ -76,6 +76,7 @@ export default {
     progress: (p) => `Muddatning ${p}% o‘tdi`, end: (e) => `Yakun: ${e}`, started: (m) => `Boshlangan: 02.01.2026 · muddat ${m} oy`,
     infraEyebrow: "Muhandislik infratuzilmasi", infraTitle: "Maydondan tashqari ham",
     plansEyebrow: "Chizmalar", plansTitle: "Stansiya rejasi va ish tartibi", plansText: "Maydon 58 blokka bo‘lingan. Ishlar ikki nuqtadan boshlanib, strelkalar bo‘yicha davom etadi.",
+    storyEyebrow: "Boshidan topshirishgacha", storyTitle: "Stansiya qanday qurildi", storyText: (n) => `${n} ta surat ketma-ket: bo‘sh maydondan tayyor stansiyagacha. Bosing — kattalashadi.`, storyStart: "Boshlanish", storyEnd: "Topshirish",
     galEyebrow: "Maydondan", galTitle: "Fotosuratlar", galText: (n) => `${n} ta surat. Bosing — kattalashadi, strelkalar bilan varaqlanadi.`,
     prev: "Oldingi loyiha", next: "Keyingi loyiha",
   },
@@ -160,7 +161,7 @@ export default {
       stats: [["150 MVt", "quvvat"], ["300 MVt·soat", "sig‘im"], ["$144 mln", "loyiha investitsiyasi"], ["20 kun", "rejadan oldin"]],
       scope: ["Geodeziya, 12 ga maydonni tekislash, ~46 000 m³ tuproq ishlari", "150 tonnalik texnika uchun 4,5 km yo‘l", "Batareya, invertor va transformatorlar uchun ~10 000 m³ beton poydevor", "Yerosti suvlari muammosini muhandislik yechimi bilan bartaraf etish"],
       infra: [["39", "po‘lat tayanch, YuK liniyasi uchun"], ["2", "yopiq suv rezervuari"], ["8 × 32 m", "chaqmoqdan himoya minoralari"], ["800 m", "sel oqimi lotogi"], ["1 km", "himoya devori"], ["~400", "ishchi va mutaxassis"]],
-      gal: ["Tayyor majmua va podstansiya", "Boshqaruv binosi va ochiq taqsimlash qurilmasi", "Batareya bloklari qatorlari", "Konteynerlarni kran bilan o‘rnatish", "Konteyner poydevorga tushirilmoqda", "Kranlar va ustunlar montaji", "Armatura va qolip ishlari", "Tayyor beton poydevorlar", "Geodezik o‘lchovlar", "Elektr tayanchini yig‘ish", "Qurilish maydoni va lager", "Topshirilgan majmua, umumiy ko‘rinish", "Majmua umumiy ko‘rinishi", "Batareya bloklari, yuqoridan", "Batareya konteynerlari", "Bloklar qatori", "Konteynerlar maydoni", "Podstansiya va boshqaruv binosi", "Ochiq taqsimlash qurilmasi", "Kuch transformatori", "Elektr montaj ishlari", "Boshqaruv binosi qurilishi", "Qurilish lageri", "Devor terish", "Materiallarni kran bilan tushirish"],
+      gal: ["Bo‘sh tog‘ yonbag‘ri va ish boshlanishi", "Ishchilar shaharchasi qurildi", "Ustaxonalar va omborlar", "Geodezik belgilash", "O‘qlarni asboblar bilan tekshirish", "Poydevor chuqurlarini qazish", "Yer ishlari va zichlash", "Armatura va qolip ishlari", "Armatura karkaslarini yig‘ish", "Karkaslar betondan oldin tekshiriladi", "Tayyor beton poydevorlar", "Poydevorlar qatori", "Kranlar va ustunlar montaji", "Bino ustunlari ko‘tarilmoqda", "Boshqaruv binosi qurilishi", "Elektr uzatish minorasini yig‘ish", "Yuqori kuchlanishli liniya minoralari", "Perimetr devori", "Devor va himoya inshootlari", "Uskunalar keltirilmoqda", "Konteynerlarni kran bilan o‘rnatish", "Konteyner poydevorga tushirilmoqda", "Podstansiya va binolar", "Kuch transformatori o‘rnatildi", "Kabellarni ulash", "Ochiq taqsimlash qurilmasi", "Batareya bloklari qatorlari", "Batareya konteynerlari", "Batareyalar maydoni", "Majmua yuqoridan", "Tayyor majmua, umumiy ko‘rinish", "Boshqaruv binosi va ochiq taqsimlash qurilmasi", "Tayyor majmua va podstansiya"],
     },
     nurobod: {
       t: "Nurobod QES", sub: "500 MVt fotoelektr stansiyasi", place: "Samarqand viloyati, Nurobod tumani", role: "sub",
@@ -182,7 +183,7 @@ export default {
       d: "Uchala bosqichda yer ishlari, kabel tarmoqlari, qurilish ishlari va quyosh panellarini o‘rnatishni bajardik.",
       stats: [["24 480", "qoziq qoqildi"], ["165 204", "PV modul"], ["1 530", "treker"], ["882 km", "kabel"]],
       scope: ["1, 2 va 3-bosqichlar", "Yer ishlari", "Kabel yotqizish va montaj", "Qurilish ishlari", "Quyosh panellarini o‘rnatish", "Invertorlar: 9 × 8 800 kVt"],
-      gal: ["Maydon umumiy ko‘rinishi", "Poydevor ishlari, yuqoridan", "Tekislangan maydon va texnika"],
+      gal: ["Poydevor ishlari, yuqoridan", "Maydon umumiy ko‘rinishi", "Tekislangan maydon va texnika"],
     },
     nishon: {
       t: "Qashqadaryo QES", sub: "500 MVt fotoelektr stansiyasi", place: "Qashqadaryo viloyati, Nishon tumani", role: "sub",
@@ -207,10 +208,10 @@ export default {
     },
     "navoiy-gibrid": {
       t: "Navoiy gibrid QES", sub: "300 MVt quyosh stansiyasi", place: "Navoiy viloyati", role: "sub",
-      d: "Navoiy Hybrid Energy majmuasining 300 MVt quyosh qismi. Qurilish, po‘lat konstruksiya va elektr ishlarini bajaramiz.",
+      d: "Navoiy Hybrid Energy majmuasining 300 MVt quyosh qismi. Qurilish, po‘lat konstruksiya va elektr ishlarini bajardik — obyekt topshirilgan.",
       stats: [[mw(300), "quvvat"], ["3", "ish yo‘nalishi"], ["Energy China", "EPC"], ["QES", "stansiya turi"]],
       scope: ["Qurilish ishlari: ta’minot va montaj", "Po‘lat konstruksiyalarni o‘rnatish", "Elektr montaj ishlari"],
-      gal: ["Qurilish maydoni, dron surati", "Poydevorlar maydoni", "Maydon rejasi bo‘yicha belgilash"],
+      gal: [],
     },
   },
 };

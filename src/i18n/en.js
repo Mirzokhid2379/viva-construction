@@ -76,6 +76,7 @@ export default {
     progress: (p) => `${p}% of the schedule elapsed`, end: (e) => `Completion: ${e}`, started: (m) => `Started 02.01.2026 · ${m}-month schedule`,
     infraEyebrow: "Engineering infrastructure", infraTitle: "Beyond the main site",
     plansEyebrow: "Drawings", plansTitle: "Site plan and work sequence", plansText: "The site is divided into 58 blocks. Work starts from two points and follows the arrows.",
+    storyEyebrow: "From start to handover", storyTitle: "How the plant was built", storyText: (n) => `${n} photos in order — from a bare site to the finished plant. Click to enlarge.`, storyStart: "Start", storyEnd: "Handover",
     galEyebrow: "From site", galTitle: "Photos", galText: (n) => `${n} photos. Click to enlarge; use the arrows to browse.`,
     prev: "Previous project", next: "Next project",
   },
@@ -160,7 +161,7 @@ export default {
       stats: [["150 MW", "capacity"], ["300 MWh", "storage"], ["$144M", "project investment"], ["20 days", "ahead of schedule"]],
       scope: ["Survey, grading of 12 ha, ~46,000 m³ of earthworks", "4.5 km road for 150-tonne equipment", "~10,000 m³ of concrete foundations for batteries, inverters and transformers", "Engineered solution to a groundwater problem"],
       infra: [["39", "steel towers for the HV line"], ["2", "covered water reservoirs"], ["8 × 32 m", "lightning protection masts"], ["800 m", "mudflow diversion channel"], ["1 km", "perimeter wall"], ["~400", "workers and specialists"]],
-      gal: ["Finished complex and substation", "Control building and switchyard", "Rows of battery blocks", "Lifting containers into place", "A container lowered onto its foundation", "Cranes and column works", "Rebar and formwork", "Finished concrete foundations", "Survey works", "Assembling a power-line tower", "Site and workers’ camp", "Completed complex, overview", "Complex overview", "Battery blocks from above", "Battery containers", "A row of blocks", "Container field", "Substation and control building", "Open switchyard", "Power transformer", "Electrical installation", "Control building under construction", "Construction camp", "Bricklaying", "Unloading materials by crane"],
+      gal: ["A bare mountain slope as work begins", "The workers’ camp is set up", "Workshops and warehouses", "Survey set-out", "Checking axes with instruments", "Digging foundation pits", "Earthworks and compaction", "Rebar and formwork", "Assembling rebar cages", "Cages checked before concreting", "Finished concrete foundations", "Rows of foundations", "Cranes and column works", "Building columns going up", "Building the control building", "Assembling a power-line tower", "High-voltage line towers", "The perimeter wall", "Wall and protective structures", "Equipment arriving on site", "Lifting containers into place", "A container lowered onto its foundation", "Substation and buildings", "Power transformer in place", "Connecting cables", "Open switchyard", "Rows of battery blocks", "Battery containers", "The battery field", "The complex from above", "Completed complex, overview", "Control building and switchyard", "Finished complex and substation"],
     },
     nurobod: {
       t: "Nurabad Solar PV", sub: "500 MW photovoltaic plant", place: "Samarkand region, Nurabad district", role: "sub",
@@ -182,7 +183,7 @@ export default {
       d: "Across all three phases we carried out earthworks, cable networks, civil works and solar panel installation.",
       stats: [["24,480", "piles driven"], ["165,204", "PV modules"], ["1,530", "trackers"], ["882 km", "of cable"]],
       scope: ["Phases 1, 2 and 3", "Earthworks", "Cable laying and installation", "Civil works", "Solar panel installation", "Inverters: 9 × 8,800 kW"],
-      gal: ["Site overview", "Foundation works from above", "Graded site and machinery"],
+      gal: ["Foundation works from above", "Site overview", "Graded site and machinery"],
     },
     nishon: {
       t: "Kashkadarya Solar PV", sub: "500 MW photovoltaic plant", place: "Kashkadarya region, Nishan district", role: "sub",
@@ -207,10 +208,10 @@ export default {
     },
     "navoiy-gibrid": {
       t: "Navoi Hybrid Solar", sub: "300 MW solar plant", place: "Navoi region", role: "sub",
-      d: "The 300 MW solar part of the Navoi Hybrid Energy complex. We carry out civil works, steel structure installation and electrical works.",
+      d: "The 300 MW solar part of the Navoi Hybrid Energy complex. We carried out civil works, steel structure installation and electrical works — the plant has been handed over.",
       stats: [[mw(300), "capacity"], ["3", "work packages"], ["Energy China", "EPC"], ["Solar PV", "plant type"]],
       scope: ["Civil works: supply and installation", "Steel structure installation", "Electrical installation"],
-      gal: ["Construction site, drone view", "Foundation field", "Site setting-out"],
+      gal: [],
     },
   },
 };

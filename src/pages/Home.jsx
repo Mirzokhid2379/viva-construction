@@ -44,7 +44,6 @@ function Figures() {
       <div className="wrap">
         <div className="fig"><b className="num">{PROJECTS.length}</b><span>{t.figs.stations(PROJECTS.length, now)}</span></div>
         <div className="fig"><b className="num">{fmt(totalMW("sol"), lang)}<small>{u}</small></b><span>{t.figs.solar}</span></div>
-        <div className="fig"><b className="num">{fmt(totalMW("th"), lang)}<small>{u}</small></b><span>{t.figs.thermal}</span></div>
         <div className="fig"><b className="num">{fmt(totalMW("bess"), lang)}<small>{u}</small></b><span>{t.figs.storage}</span></div>
         <div className="fig"><b className="num">500<small>+</small></b><span>{t.figs.staff}</span></div>
       </div>

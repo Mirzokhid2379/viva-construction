@@ -120,7 +120,25 @@ export default function ProjectDetail() {
         </section>
       )}
 
-      {p.photos.length > 0 && <section style={{ paddingTop: 0 }}>
+      {p.st === "done" && p.photos.length > 1 && <section style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <SectionHead eyebrow={d.storyEyebrow} title={d.storyTitle}>{d.storyText(p.photos.length)}</SectionHead>
+          <div className="story-ends"><span>{d.storyStart}</span><i /><span>{d.storyEnd}</span></div>
+          <ol className="story">
+            {p.photos.map(([k, c], j) => (
+              <li key={k}>
+                <button type="button" aria-label={c} onClick={() => openPhotos(p.photos, j)}>
+                  <img src={img(k)} alt={c} loading="lazy" decoding="async" />
+                  <span className="sn num">{String(j + 1).padStart(2, "0")}</span>
+                </button>
+                <p>{c}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>}
+
+      {p.st !== "done" && p.photos.length > 0 && <section style={{ paddingTop: 0 }}>
         <div className="wrap">
           <SectionHead eyebrow={d.galEyebrow} title={d.galTitle}>{d.galText(p.photos.length)}</SectionHead>
           <div className="gal">

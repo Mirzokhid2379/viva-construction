@@ -120,7 +120,7 @@ export default function MapSection() {
           <div>
             <BigMap projects={projects} active={active} setActive={setActive} />
             <div className="legend">
-              {["sol", "bess", "th"].map((k) => <span key={k}><i style={{ background: TYPE_COLOR[k] }} />{t.types[k]}</span>)}
+              {["sol", "bess"].map((k) => <span key={k}><i style={{ background: TYPE_COLOR[k] }} />{t.types[k]}</span>)}
             </div>
           </div>
           <div className="reglist">

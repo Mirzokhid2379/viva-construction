@@ -10,7 +10,7 @@ export const KEYWORDS = {
 export const PAGES = {
   uz: {
     "/": ["VIVA Construction — energetika obyektlari qurilishi", "Quyosh, issiqlik elektr stansiyalari va BESS energiya saqlash tizimlari qurilishi. Farg‘ona BESS 150 MVt rejadan 20 kun oldin topshirildi. Toshkent, O‘zbekiston."],
-    "/loyihalar": ["Loyihalar — elektr stansiyalari qurilishi | VIVA Construction", "8 ta elektr stansiyasi: Farg‘ona, Samarqand, Buxoro, Qashqadaryo va Navoiyda quyosh, issiqlik va energiya saqlash obyektlari. Topshirilgan va qurilayotgan loyihalar."],
+    "/loyihalar": ["Loyihalar — elektr stansiyalari qurilishi | VIVA Construction", "6 ta elektr stansiyasi: Farg‘ona, Samarqand, Buxoro, Qashqadaryo va Navoiyda quyosh va energiya saqlash obyektlari. Topshirilgan va qurilayotgan loyihalar."],
     "/jarayon": ["Qurilish jarayoni rasmlarda | VIVA Construction", "Bo‘sh yerdan tayyor stansiyagacha: Farg‘ona BESS qurilishi 10 bosqichda — yer ishlari, poydevor, metall konstruksiya, elektr liniyasi, montaj va topshirish."],
     "/xarita": ["Qurilgan obyektlar xaritasi | VIVA Construction", "O‘zbekiston xaritasida biz qurgan va qurayotgan elektr stansiyalari: Farg‘ona, Samarqand, Buxoro, Qashqadaryo, Navoiy."],
     "/yangiliklar": ["Yangiliklar | VIVA Construction", "VIVA Construction yangiliklari: Farg‘ona BESS ishga tushirilishi, Nurobod quyosh elektr stansiyasida ishlar boshlanishi, yangi shartnomalar va mukofotlar."],
@@ -19,7 +19,7 @@ export const PAGES = {
   },
   ru: {
     "/": ["VIVA Construction — строительство энергетических объектов", "Строительство солнечных и тепловых электростанций, систем накопления энергии BESS. BESS Фергана 150 МВт сдана на 20 дней раньше срока. Ташкент, Узбекистан."],
-    "/loyihalar": ["Проекты — строительство электростанций | VIVA Construction", "8 электростанций: солнечные, тепловые и системы накопления энергии в Фергане, Самарканде, Бухаре, Кашкадарье и Навои. Сданные и строящиеся объекты."],
+    "/loyihalar": ["Проекты — строительство электростанций | VIVA Construction", "6 электростанций: солнечные и системы накопления энергии в Фергане, Самарканде, Бухаре, Кашкадарье и Навои. Сданные и строящиеся объекты."],
     "/jarayon": ["Процесс строительства в фотографиях | VIVA Construction", "От пустого участка до готовой станции: строительство BESS Фергана в 10 этапах — земляные работы, фундаменты, металлоконструкции, ЛЭП, монтаж и сдача."],
     "/xarita": ["Карта построенных объектов | VIVA Construction", "Построенные и строящиеся электростанции на карте Узбекистана: Фергана, Самарканд, Бухара, Кашкадарья, Навои."],
     "/yangiliklar": ["Новости | VIVA Construction", "Новости VIVA Construction: запуск BESS Фергана, начало работ на СЭС Нурабад, новые договоры и награды."],
@@ -28,7 +28,7 @@ export const PAGES = {
   },
   en: {
     "/": ["VIVA Construction — building energy facilities in Uzbekistan", "Construction of solar and thermal power plants and BESS energy storage. Fergana BESS 150 MW delivered 20 days ahead of schedule. Tashkent, Uzbekistan."],
-    "/loyihalar": ["Projects — power plant construction | VIVA Construction", "8 power plants: solar, thermal and energy storage projects in Fergana, Samarkand, Bukhara, Kashkadarya and Navoi. Completed and ongoing work."],
+    "/loyihalar": ["Projects — power plant construction | VIVA Construction", "6 power plants: solar and energy storage projects in Fergana, Samarkand, Bukhara, Kashkadarya and Navoi. Completed and ongoing work."],
     "/jarayon": ["How we build, in photos | VIVA Construction", "From bare ground to a working plant: Fergana BESS in 10 stages — earthworks, foundations, steel structures, power line, installation and handover."],
     "/xarita": ["Project map | VIVA Construction", "Power plants we have built and are building, on the map of Uzbekistan: Fergana, Samarkand, Bukhara, Kashkadarya, Navoi."],
     "/yangiliklar": ["News | VIVA Construction", "VIVA Construction news: Fergana BESS launch, start of work at Nurabad Solar PV, new contracts and awards."],
