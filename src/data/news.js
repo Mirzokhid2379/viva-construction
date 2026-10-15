@@ -2,10 +2,10 @@
 // Yangi yangilik qo‘shish: shu ro‘yxatning boshiga yozing va uchala tilga matn qo‘shing.
 export const NEWS = [
   { id: "bess-launch", date: "2024-12-13", project: "fargona-bess", photos: ["cer_main", "cer_2", "cer_3", "cer_4", "cer_5", "cer_6"], kv: true, featured: true },
-  { id: "nurobod-start", date: "2026-01-02", project: "nurobod", photos: ["xd0530", "xd0521", "xd0533"] },
+  { id: "nurobod-start", date: "2026-01-02", project: "nurobod", photos: ["nu05", "nu07", "nu09"] },
   { id: "contracts", date: "2025-11-28", project: null, photos: ["f_eng1"] },
   { id: "lt-award", date: null, project: "nurobod", photos: ["aw1"] },
-  { id: "sazagan", date: null, project: "sazagan", photos: ["xb44", "xb42", "xb45"] },
+  { id: "sazagan", date: null, project: "sazagan", photos: ["sz07", "sz06", "sz04"] },
 ];
 
 const MONTHS = {

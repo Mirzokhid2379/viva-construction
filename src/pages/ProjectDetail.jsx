@@ -108,7 +108,7 @@ export default function ProjectDetail() {
       {p.planPhotos && (
         <section style={{ paddingTop: 0 }}>
           <div className="wrap">
-            <SectionHead eyebrow={d.plansEyebrow} title={d.plansTitle}>{d.plansText}</SectionHead>
+            <SectionHead eyebrow={d.plansEyebrow} title={d.plansTitle}>{p.plansText ? d.plansText : null}</SectionHead>
             <div className="plans">
               {p.planPhotos.map(([k, c], j) => (
                 <button type="button" key={k} onClick={() => openPhotos(p.planPhotos, j)}>

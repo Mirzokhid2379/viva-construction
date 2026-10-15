@@ -631,3 +631,4 @@ footer .f-contact .f-tel{font-size:18px;font-weight:500;color:var(--night-ink);l
 .story li:last-child .sn{background:#3DDC97;color:#06281A}
 .story p{margin:0;font-size:14px;line-height:1.45;color:var(--ink)}
 @media (max-width:520px){.story{grid-template-columns:1fr 1fr;gap:16px 10px}.story p{font-size:13px}}
+.plans:has(> button:only-child){grid-template-columns:minmax(0,1fr);max-width:980px}
