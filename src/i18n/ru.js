@@ -110,7 +110,7 @@ export default {
   contact: {
     title: "Обсудим ваш проект",
     lead: "Отправьте техническое задание по солнечной, тепловой станции или системе накопления энергии.",
-    director: "Директор", directorName: "Хумоюн Ахмаджонов", phone: "Телефон", email: "Эл. почта", instagram: "Instagram", address: "Адрес", office: "Офис", legal: "Юридический адрес", mapOpen: "Открыть на карте",
+    director: "Учредитель", directorName: "Ахмаджонов Хумоюн Тахаввурович", phone: "Телефон", email: "Эл. почта", instagram: "Instagram", address: "Адрес", office: "Офис", legal: "Юридический адрес", mapOpen: "Открыть на карте",
     officeAddress: "Ташкент, Tashkent City, бизнес-центр Nest One, ул. Ислама Каримова, 1-А-4, блок C, 19 этаж, офис 159",
     vivaAddress: "Ташкент, Бектемирский район, ул. Бектемир Шох, 13",
     activity: "Деятельность", docs: "Документы",

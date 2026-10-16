@@ -110,7 +110,7 @@ export default {
   contact: {
     title: "Loyihangizni muhokama qilamiz",
     lead: "Quyosh, issiqlik yoki energiya saqlash stansiyasi bo‘yicha texnik topshiriqni yuboring.",
-    director: "Direktor", directorName: "Xumoyun Ahmadjonov", phone: "Telefon", email: "Elektron pochta", instagram: "Instagram", address: "Manzil", office: "Ofis", legal: "Yuridik manzil", mapOpen: "Xaritada ochish",
+    director: "Ta’sischi", directorName: "Ahmadjonov Xumoyun Taxavvurovich", phone: "Telefon", email: "Elektron pochta", instagram: "Instagram", address: "Manzil", office: "Ofis", legal: "Yuridik manzil", mapOpen: "Xaritada ochish",
     officeAddress: "Toshkent, Tashkent City, Nest One biznes markazi, Islom Karimov ko‘chasi, 1-A-4, C-blok, 19-qavat, 159-ofis",
     vivaAddress: "Toshkent, Bektemir tumani, Bektemir Shoh ko‘chasi, 13",
     activity: "Faoliyat", docs: "Hujjatlar",

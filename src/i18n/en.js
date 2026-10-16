@@ -110,7 +110,7 @@ export default {
   contact: {
     title: "Let’s discuss your project",
     lead: "Send us a technical brief for a solar, thermal or battery storage plant.",
-    director: "Director", directorName: "Khumoyun Akhmadjonov", phone: "Phone", email: "Email", instagram: "Instagram", address: "Address", office: "Office", legal: "Legal address", mapOpen: "Open in maps",
+    director: "Founder", directorName: "Akhmadjonov Khumoyun Takhavvurovich", phone: "Phone", email: "Email", instagram: "Instagram", address: "Address", office: "Office", legal: "Legal address", mapOpen: "Open in maps",
     officeAddress: "Nest One, Tashkent City, 1-A-4 Islam Karimov Street, Block C, 19th floor, Office 159, Tashkent",
     vivaAddress: "13 Bektemir Shoh Street, Bektemir district, Tashkent",
     activity: "Activity", docs: "Documents",

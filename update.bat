@@ -25,7 +25,7 @@ git remote set-url origin %REPO%
 git fetch origin
 git reset --soft origin/main
 git add -A
-git commit -m "Loyihalar rasmlari yangilandi"
+git commit -m "Tasischi va email yangilandi"
 git push -u origin main
 echo.
 if errorlevel 1 (

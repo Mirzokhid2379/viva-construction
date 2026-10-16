@@ -18,7 +18,7 @@ export const PARTNERS = ["OMEGA Energy Group", "CASA Construction", "Energy Chin
 
 export const CONTACTS = {
   phone: "+998 33 002 22 24",
-  email: "khumoyun2020@gmail.com",
+  email: "vivaconstructions.uz@gmail.com",
   map: "https://www.google.com/maps/search/?api=1&query=Nest+One+Tashkent+City",
 };
 
